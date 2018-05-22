@@ -634,7 +634,7 @@ li.nav__search,
 
 @media screen and (max-width: 767px) {
     .u90Ld.aqIhJ > .va-slice:first-child > h2:first-child {
-        margin-top: 0 !important;
+        /*margin-top: 0 !important;*/
         line-height: 1.5em !important;
     }
 
@@ -645,7 +645,7 @@ li.nav__search,
 
 @media screen and (min-width: 546px) and (max-width: 767px) {
     .u90Ld.aqIhJ > .va-slice:first-child > h2:first-child {
-        margin-top: 0.85em !important;
+        /*margin-top: 0.85em !important;*/
         line-height: 18px !important;
     }
 }
@@ -916,3 +916,8 @@ button._2sdWW.calculator-list-theme__button-conditions._1VABv._3zDyU._3x77s {
 /*.mobile-navbar__wrapper.hidden-lg-up.mobile-sticky.sticky-visible {
 	display: none;
 }*/
+
+.uaHd9 {
+    width: 200px !important;
+    line-height: 1.4em;
+}
