@@ -35,6 +35,15 @@
     width: 50%;
 }
 
-._3ITGU._2ZoAD {
+._3ITGU._2ZoAD-rules {
     display: none;
+}
+
+.form-second-part {
+    display: none;
+}
+
+.only-this-form {
+    display: flex;
+    justify-content: center;
 }

