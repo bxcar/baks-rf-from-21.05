@@ -23,27 +23,148 @@
     margin-bottom: 0 !important;
 }
 
-.only-this-form ._3FIbJ input {
+.only-this-form1 ._3FIbJ input {
     box-shadow: none !important;
 }
 
-.only-this-form ._3pzz9 {
+.only-this-form1 ._3pzz9 {
     background-image: none;
 }
 
-._1F9QS._3gqYl.custom-width {
+.only-this-form1 ._1F9QS._3gqYl.custom-width {
     width: 50%;
 }
 
-._3ITGU._2ZoAD-rules {
+.only-this-form1 ._3ITGU._2ZoAD-rules {
     display: none;
 }
 
-.form-second-part {
+.only-this-form1 .form-second-part {
     display: none;
 }
 
-.only-this-form {
+.only-this-form1 {
     display: flex;
     justify-content: center;
+}
+
+.only-this-form2 .bank-product__column--small {
+    display: flex;
+    align-items: center;
+}
+
+._3ThEC._7ol--.cr-cards {
+    border-bottom: none;
+}
+
+#loadMore.cr-cards {
+    border: none;
+}
+
+.page-cr-cards .debit-cards-serp .calculator-controls-container.l-row {
+    display: block;
+    font-size: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 22px;
+}
+
+.page-cr-cards .debit-cards-serp .calculator-controls-container {
+    min-height: 0;
+}
+
+.page-cr-cards .calculator-controls-container {
+    padding-top: 9px;
+}
+
+.page-cr-cards .l-row, .page-cr-cards sub, .page-cr-cards sup {
+    position: relative;
+}
+
+.page-cr-cards .debit-cards-serp .calculator-controls-container .l-col {
+    display: inline-block;
+    float: none;
+    position: relative;
+    vertical-align: top;
+    padding: 0 20px 5px;
+    width: 100%;
+}
+
+.page-cr-cards .radio-control {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.page-cr-cards .radio-control label {
+    display: inline-block;
+}
+
+.page-cr-cards .radio-control-label {
+    color: #8c8c8c;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 300;
+}
+
+.page-cr-cards .radio-control-icon {
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    top: 4px;
+}
+
+.page-cr-cards .radio-control-inner {
+    margin-top: 5px;
+}
+
+.page-cr-cards .radio-control-inner ul {
+    margin-left: -9px;
+}
+
+.page-cr-cards .radio-control-inner li {
+    position: relative;
+    display: inline-block;
+    margin-right: 9px;
+    font-size: 18px;
+    background-image: none;
+}
+
+.page-cr-cards .l-row:after {
+    display: table;
+    clear: both;
+}
+
+.page-cr-cards .radio-control-inner input {
+    display: none;
+}
+
+.page-cr-cards input[type=radio] {
+    vertical-align: text-
+}
+
+.page-cr-cards .radio-control-inner input[type=radio]:checked+span {
+    /*background-color: #cbefff;*/
+    background-color: #fff;
+    color: #000;
+}
+
+.page-cr-cards .radio-control-inner li:hover span {
+    /*color: #03a9f4;*/
+    color: #1ba4e1;
+}
+
+.page-cr-cards .radio-control-inner label span {
+    padding: 0 10px;
+    border-radius: 4px;
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: 0 0;
 }
