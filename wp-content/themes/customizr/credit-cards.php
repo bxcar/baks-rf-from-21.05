@@ -452,56 +452,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="WXTuD WXTuD-fx">
-                                    <div class="_3SAiO _1wJD0 calculator-list-theme__label fx">Валюта</div>
-                                    <div data-test="ui-select" class="_129hA _129hA-fx">
-                                        <div class="_3_n91 _1e74P _1fswf" data-test="ui-select-input">
-                                            <div class="_1DCZo">
-                                                <div data-test="ui-select" class="_129hA _2futP _1iN3s">
-                                                    <div class="_3_n91 _1e74P _1fswf" data-test="ui-select-input">
-                                                        <div class="_1DCZo"><input id="cur_currency" type="text"
-                                                                                   readonly=""
-                                                                                   autocomplete="off" autocorrect="off"
-                                                                                   autocapitalize="off" spellcheck="off"
-                                                                                   class="_2ARmF _2qJ6u _16cFN "
-                                                                                   role="input"
-                                                                                   value="&#8381;"
-                                                                                   onclick="select_cur();">
-                                                            <div class="_2k11- _2V6_I _3E_jV SVDVr _2Z7K9"
-                                                                 data-test="ui-select-input-icon">
-                                                                <svg class="SdEDi" data-reactid="189">
-                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                         xlink:href="#arrow-down-thin"
-                                                                         data-reactid="190">
-                                                                        <svg viewBox="0 0 8.1 4.8" id="arrow-down-thin"
-                                                                             xmlns="http://www.w3.org/2000/svg"
-                                                                             width="100%" height="100%">
-                                                                            <path d="M7.8.4L4.1 4.1.4.4"></path>
-                                                                        </svg>
-                                                                    </use>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <ul id="currency" class=" _2cR3J" data-test="ui-select-values">
-                                                        <li value="RUB" class="_3NNjg" data-test="ui-menu-item"
-                                                            onclick="select_currency('&#8381;')"><i class="fa fa-rub"
-                                                                                                    aria-hidden="true"></i>
-                                                        </li>
-                                                        <li value="USD" class="_3NNjg" data-test="ui-menu-item"
-                                                            onclick="select_currency('&#36;')"><i class="fa fa-usd"
-                                                                                                  aria-hidden="true"></i>
-                                                        </li>
-                                                        <li value="EUR" class="_3NNjg" data-test="ui-menu-item"
-                                                            onclick="select_currency('&euro;')"><i class="fa fa-eur"
-                                                                                                   aria-hidden="true"></i>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="WXTuD" style="display: none;">
                                 <div class="_3SAiO _1wJD0 calculator-list-theme__label fx"> Срок</div>
