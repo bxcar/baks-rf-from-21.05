@@ -1669,7 +1669,7 @@
     }</script>
 <script>function Get_PotrKr() {
         $.ajax({
-            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_potr_kr.php",
+            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_cr_cards.php",
             type: "POST",
             error: function (response) {
                 $(".status").html(response.status + "<br>" + response.msg);
