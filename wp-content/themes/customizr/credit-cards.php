@@ -27,14 +27,8 @@
           type='text/css' media='all'/>
     <link rel='stylesheet' id='czr-gfonts-css' href='//fonts.googleapis.com/css?family=Source+Sans+Pro' type='text/css'
           media='all'/>
-    <link rel='stylesheet' id='customizr-fa-css'
-          href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/shared/fonts/fa/css/font-awesome.min.css?ver=4.0.14'
-          type='text/css' media='all'/>
     <link rel='stylesheet' id='table-sorter-custom-css-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/plugins/table-sorter/wp-style.css?ver=4.9.3'
-          type='text/css' media='all'/>
-    <link rel='stylesheet' id='yoast-seo-adminbar-css'
-          href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/plugins/wordpress-seo/css/dist/adminbar-611.min.css?ver=6.1.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='kr_bootstrap-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/css/bootstrap.css?ver=4.9.3'
@@ -45,14 +39,11 @@
     <link rel='stylesheet' id='kr_fa-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css?ver=4.9.3'
           type='text/css' media='all'/>
-    <link rel='stylesheet' id='kr_common.maven.min-css'
+    <!--<link rel='stylesheet' id='kr_common.maven.min-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/css/common.maven.min.css?ver=4.9.3'
-          type='text/css' media='all'/>
+          type='text/css' media='all'/>-->
     <link rel='stylesheet' id='kr_common.4f395-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/css/common.4f3956d44b9b23a7f5960677c886d163.css?ver=4.9.3'
-          type='text/css' media='all'/>
-    <link rel='stylesheet' id='kr_menu-css'
-          href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/css/menu.css?ver=4.9.3'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='kr_style-css'
           href='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/css/style.css?ver=4.9.3'
@@ -157,8 +148,8 @@
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/plugins/table-sorter/wp-script.js?ver=4.9.3'></script>
     <script type='text/javascript'
             src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=4.9.3'></script>
-    <script type='text/javascript'
-            src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/js/bootstrap.js?ver=4.9.3'></script>
+    <!--<script type='text/javascript'
+            src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/js/bootstrap.js?ver=4.9.3'></script>-->
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/js/jquery-ui.js?ver=4.9.3'></script>
     <script type='text/javascript'
@@ -391,8 +382,9 @@
                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$0.0"><input type="radio"
                                                                                                         data-label="Все"
                                                                                                         name="mainFilterValue"
-                                                                                                        value="0"
+                                                                                                        value="card_type_all"
                                                                                                         checked=""
+                                                                                                        onchange="Get_PotrKr();"
                                                                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$0.0.0"><span
                                                             data-reactid=".1.2.0.1.0.0.0.0.2.0.$0.0.1">Все</span></label>
                                             </li>
@@ -400,7 +392,8 @@
                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$1.0"><input type="radio"
                                                                                                         data-label="Cashback"
                                                                                                         name="mainFilterValue"
-                                                                                                        value="1"
+                                                                                                        value="card_type_cashback"
+                                                                                                        onchange="Get_PotrKr();"
                                                                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$1.0.0"><span
                                                             data-reactid=".1.2.0.1.0.0.0.0.2.0.$1.0.1">Cashback</span></label>
                                             </li>
@@ -408,7 +401,8 @@
                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$2.0"><input type="radio"
                                                                                                         data-label="Для путешествий"
                                                                                                         name="mainFilterValue"
-                                                                                                        value="2"
+                                                                                                        value="card_type_travel"
+                                                                                                        onchange="Get_PotrKr();"
                                                                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$2.0.0"><span
                                                             data-reactid=".1.2.0.1.0.0.0.0.2.0.$2.0.1">Для путешествий</span></label>
                                             </li>
@@ -416,7 +410,8 @@
                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$3.0"><input type="radio"
                                                                                                         data-label="Бонусы и скидки"
                                                                                                         name="mainFilterValue"
-                                                                                                        value="3"
+                                                                                                        value="card_type_bonus"
+                                                                                                        onchange="Get_PotrKr();"
                                                                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$3.0.0"><span
                                                             data-reactid=".1.2.0.1.0.0.0.0.2.0.$3.0.1">Бонусы и скидки</span></label>
                                             </li>
@@ -424,7 +419,8 @@
                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$4.0"><input type="radio"
                                                                                                         data-label="Без справок о доходах"
                                                                                                         name="mainFilterValue"
-                                                                                                        value="4"
+                                                                                                        value="card_type_without_income_statement"
+                                                                                                        onchange="Get_PotrKr();"
                                                                                                         data-reactid=".1.2.0.1.0.0.0.0.2.0.$4.0.0"><span
                                                             data-reactid=".1.2.0.1.0.0.0.0.2.0.$4.0.1">Без справок о доходах</span></label>
                                             </li>
@@ -441,7 +437,7 @@
                                         <div class="_1Mbqb _2futP _2mpBR fx" data-test="ui-slider-input">
                                             <div class="_3_n91 AePXT _1fswf" data-test="ui-slider-input-input"><input
                                                         id="price" class="_2ARmF _2qJ6u _3uy56 _3I6R2" name="price"
-                                                        value="500000" onkeypress="price_change()"
+                                                        value="100000" onkeypress="price_change()"
                                                         style="width:100%;"><input id="oldprice"
                                                                                    class="_2ARmF _2qJ6u _16cFN"
                                                                                    name="oldprice" type="hidden"><input
@@ -1279,13 +1275,13 @@
         });
     });
 </script>
-<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort-and-load-more-credits.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort-and-load-more-cr-cards.js"></script>
 <script>$(function () {
         $("#slider-range").slider({
             range: true,
             min: 1,
             max: 1500,
-            values: [1, 500],
+            values: [1, 100],
             step: 1,
             slide: function (event, ui) {
                 $("#price").val(ui.values[1] * 1000);
@@ -1339,39 +1335,6 @@
         select_currency("₽");
         Get_PotrKr();
     }            </script>
-<script type="text/javascript">            $(function () {
-        l1 = document.getElementById('va-1').innerHTML.length;
-        l2 = document.getElementById('va-2').innerHTML.length;
-        l3 = document.getElementById('va-3').innerHTML.length;
-        maxl = l1;
-        if (l2 > l1) maxl = l2;
-        if (l3 > l2) maxl = l3;
-
-        if (document.body.clientWidth < 768) {
-            k = 54;
-            v = 25;
-            vh = 100;
-
-        }
-        else {
-            k = 116;
-            v = 30;
-            vh = 160;
-
-        }
-        $('#va-accordion').vaccordion({
-            visibleSlices: 5,
-            accordionH: vh + (maxl / k) * 30,
-            expandedHeight: maxl,
-            expandedHeight1: vh + (l1 / k) * v,
-            expandedHeight2: vh + (l2 / k) * v,
-            expandedHeight3: vh + (l3 / k) * v,
-
-            animOpacity: 1,
-            contentAnimSpeed: 2000,
-            lengthSlide: maxl / k
-        });
-    });        </script>
 <script> function select_cur_dop() {
         if ($("#currency_dop").css('visibility') == 'hidden') {
             $("#currency_dop").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
@@ -1496,8 +1459,8 @@
 <script>function price_change() {
         a = document.getElementById('price').value;
         if (a >= 10000 && a <= 15000000) {
-            $("#slider-range").slider("option", "values", [1, a / 10000]);
-            $("#slider-range_dop").slider("option", "values", [1, a / 10000]);
+//            $("#slider-range").slider("option", "values", [1, a / 10000]);
+//            $("#slider-range_dop").slider("option", "values", [1, a / 10000]);
             Get_PotrKr();
         }
     }</script>
@@ -1645,45 +1608,12 @@
                 var data = {"bank_offers": res};
                 console.log(data);
                 change(data);
+                loadmore();
                 console.log("Успешно загрузили данные");
             },
         });
     }
     Get_PotrKr();</script>
-<!-- Top100 (Kraken) Counter -->
-<script>
-    (function (w, d, c) {
-        (w[c] = w[c] || []).push(function () {
-            var options = {
-                project: 4521925,
-            };
-            try {
-                w.top100Counter = new top100(options);
-            } catch (e) {
-            }
-        });
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () {
-                n.parentNode.insertBefore(s, n);
-            };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src =
-            (d.location.protocol == "https:" ? "https:" : "http:") +
-            "//st.top100.ru/top100/top100.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-            f();
-        }
-    })(window, document, "_top100q");
-</script>
-<noscript>
-    <img src="//counter.rambler.ru/top100.cnt?pid=4521925" alt="Топ-100"/>
-</noscript>
-<!-- END Top100 (Kraken) Counter -->
 <!--Openstat-->
 <span id="openstat1"></span>
 <script type="text/javascript">

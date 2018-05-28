@@ -6,6 +6,7 @@ function change(cart) {
     console.log("Показываем таблицу");
 
     var sum_credit = $("#price").val();
+    var card_type_value = document.querySelector('input[name="mainFilterValue"]:checked').value;
 
 
     var l = cart.bank_offers.length;
@@ -19,18 +20,35 @@ function change(cart) {
         var alt = cart.bank_offers[i].alt;
         var rate = cart.bank_offers[i].rate;
         var bank_title = cart.bank_offers[i].bank_title;
+        var credit_limit = cart.bank_offers[i].credit_limit;
+        var period = cart.bank_offers[i].period;
+        var service_cost = cart.bank_offers[i].service_cost;
+        var credit_card_link = cart.bank_offers[i].credit_card_link;
+        var amount_min = Number(cart.bank_offers[i].amount_min);
+        var amount_max = Number(cart.bank_offers[i].amount_max);
+        var type_card = cart.bank_offers[i].type_card;
 
 
-        if (true) {
+        if ((sum_credit >= amount_min) && (sum_credit <= amount_max) && ((card_type_value == 'card_type_' + type_card[0])
+            || (card_type_value == 'card_type_' + type_card[1])
+            || (card_type_value == 'card_type_' + type_card[2])
+            || (card_type_value == 'card_type_' + type_card[3])
+            || (card_type_value == 'card_type_' + type_card[4])
+            || (card_type_value == 'card_type_all'))) {
+            console.log(sum_credit);
+            console.log(amount_min);
+            console.log(amount_max);
+            console.log(type_card);
+            console.log(card_type_value);
             kol += 1;
 
             table = table + '<li class="results-container-line">' +
                 '<div class="bank-product result-card result-card--deposit result-card--promoted T-DefaultProposition T-Proposition">' +
                 '<div class="result-card-top bank-product__top">' +
                 '<div class="bank-product__header bank-product__header--mobile">' +
-                '<div class="bank-product__bank">'+ bank_title +'</div>' +
+                '<div class="bank-product__bank">' + bank_title + '</div>' +
                 '<div class="bank-product__card-name">' +
-                '<a class="bank-product__card-link" href="" target="_blank" rel="noopener noreferrer">'+ name +'</a>' +
+                '<a class="bank-product__card-link" href="' + credit_card_link + '" target="_blank">' + name + '</a>' +
                 '</div>' +
                 '</div>' +
                 '<div class="bank-product__row">' +
@@ -38,8 +56,8 @@ function change(cart) {
                 '<span class="bank-product__cardwrap">' +
                 '<div class="bank-product__card">' +
                 '<div class="product-pic">' +
-                '<a class="company-logo-inner" href="https://sravni.go2cloud.org/aff_c?offer_id=75&amp;aff_id=2&amp;aff_sub=893580847.1527081166&amp;aff_sub2=(not set)/~/(not set)/~/(not set)/~/(not set)/~/Moscow/~/Moscow/~/kredity%2Fpodbor-onlajn%2F&amp;aff_sub3=&amp;aff_sub4=MasterCardStandardprosto-kreditnaja&amp;aff_sub5=credcard&amp;source=search" target="_blank" rel="noopener noreferrer">' +
-                '<img style="width:221px;" src="'+ logo +'" alt="'+ alt +'">' +
+                '<a class="company-logo-inner" href="' + credit_card_link + '" target="_blank" rel="noopener noreferrer">' +
+                '<img style="width:221px;" src="' + logo + '" alt="' + alt + '">' +
                 '</a>' +
                 '</div><span></span></div>' +
                 '</span></div>' +
@@ -48,9 +66,9 @@ function change(cart) {
                 '<div class="product-info-container-inner">' +
                 '<div class="l-content-row">' +
                 '<div class="bank-product__header">' +
-                '<div class="bank-product__bank">'+ bank_title +'</div>' +
+                '<div class="bank-product__bank">' + bank_title + '</div>' +
                 '<div class="bank-product__card-name">' +
-                '<a class="bank-product__card-link" href="https://sravni.go2cloud.org/aff_c?offer_id=75&amp;aff_id=2&amp;aff_sub=893580847.1527081166&amp;aff_sub2=(not set)/~/(not set)/~/(not set)/~/(not set)/~/Moscow/~/Moscow/~/kredity%2Fpodbor-onlajn%2F&amp;aff_sub3=&amp;aff_sub4=MasterCardStandardprosto-kreditnaja&amp;aff_sub5=credcard&amp;source=search" target="_blank" rel="noopener noreferrer">Карта «Просто кредитная» Masterсard Standard</a>' +
+                '<a class="bank-product__card-link" href="' + credit_card_link + '" target="_blank" rel="noopener noreferrer">' + name + '</a>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
@@ -58,17 +76,17 @@ function change(cart) {
                 '<ul class="card-info-list">' +
                 '<li class="card-info-list__item">' +
                 '<span class="card-info-list__icon card-info-list__icon--percent"></span>' +
-                '<span class="digits bank-product__txt">'+ rate +'</span>' +
+                '<span class="digits bank-product__txt">' + rate + '</span>' +
                 '<span class="dimmed bank-product__ref"> ставка по кредиту в год</span>' +
                 '</li>' +
                 '<li class="card-info-list__item">' +
                 '<span class="card-info-list__icon card-info-list__icon--calendar"></span>' +
-                '<span class="digits bank-product__txt">до 50 дней</span>' +
+                '<span class="digits bank-product__txt">' + period + '</span>' +
                 '<span class="dimmed bank-product__ref"> льготный период</span>' +
                 '</li>' +
                 '<li class="card-info-list__item">' +
                 '<span class="card-info-list__icon card-info-list__icon--bag"></span>' +
-                '<span class="digits bank-product__txt">до 300&nbsp;000 ' +
+                '<span class="digits bank-product__txt">' + credit_limit + ' ' +
                 '<span class="rouble">' +
                 '<span class="rouble__default">руб.</span>' +
                 '</span>' +
@@ -77,26 +95,26 @@ function change(cart) {
                 '</li>' +
                 '<li class="card-info-list__item">' +
                 '<span class="card-info-list__icon card-info-list__icon--price"></span>' +
-                '<span class="digits bank-product__txt">бесплатно</span>' +
+                '<span class="digits bank-product__txt">' + service_cost + '</span>' +
                 '<span class="dimmed bank-product__ref"> стоимость обслуживания</span>' +
                 '</li>' +
                 '</ul>' +
                 '</div>' +
                 '<div class="result-card-btn-container bank-product__btn">' +
-                '<a href="https://sravni.go2cloud.org/aff_c?offer_id=75&amp;aff_id=2&amp;aff_sub=893580847.1527081166&amp;aff_sub2=(not set)/~/(not set)/~/(not set)/~/(not set)/~/Moscow/~/Moscow/~/kredity%2Fpodbor-onlajn%2F&amp;aff_sub3=&amp;aff_sub4=MasterCardStandardprosto-kreditnaja&amp;aff_sub5=credcard&amp;source=search" class="ui-button ui-button--green" target="_blank" rel="noopener noreferrer">Перейти</a>' +
+                '<a href="' + credit_card_link + '" class="ui-button ui-button--green" target="_blank" rel="noopener noreferrer">Перейти</a>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="bank-product__lic bank-product__lic--pos-bottom">' +
-                '<div class="license-text ">' +
+                '<div class="license-text " style="display: none;">' +
                 '<span>Лиц. № </span><span>2557</span>' +
                 '</div>' +
                 '</div>' +
                 '</div>' +
                 '<div class="result-card-mobile-btn-container">' +
-                '<a href="https://sravni.go2cloud.org/aff_c?offer_id=75&amp;aff_id=2&amp;aff_sub=893580847.1527081166&amp;aff_sub2=(not set)/~/(not set)/~/(not set)/~/(not set)/~/Moscow/~/Moscow/~/kredity%2Fpodbor-onlajn%2F&amp;aff_sub3=&amp;aff_sub4=MasterCardStandardprosto-kreditnaja&amp;aff_sub5=credcard&amp;source=search" class="ui-button ui-button--green ui-button--mobile" target="_blank" rel="noopener noreferrer">Перейти</a>' +
+                '<a href="' + credit_card_link + '" class="ui-button ui-button--green ui-button--mobile" target="_blank" rel="noopener noreferrer">Перейти</a>' +
                 '</div>' +
                 '<div class="result-card-close-btn">' +
                 '<icon class="icon icon-size-13 icon--close">' +

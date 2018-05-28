@@ -29,6 +29,10 @@ if (count($result) > 0) {
         $PotrKr[$i]['credit_limit'] = get_post_meta($p['ID'], 'credit_limit', true);
         $PotrKr[$i]['period'] = get_post_meta($p['ID'], 'period', true);
         $PotrKr[$i]['service_cost'] = get_post_meta($p['ID'], 'service_cost', true);
+        $PotrKr[$i]['credit_card_link'] = get_post_meta($p['ID'], 'credit_card_link', true);
+        $PotrKr[$i]['amount_min'] = get_post_meta($p['ID'], 'amount_min', true);
+        $PotrKr[$i]['amount_max'] = get_post_meta($p['ID'], 'amount_max', true);
+        $PotrKr[$i]['type_card'] = get_post_meta($p['ID'], 'type_card', true);
 
 
 

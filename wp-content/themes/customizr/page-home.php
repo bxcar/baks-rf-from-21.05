@@ -166,7 +166,7 @@
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.easing.1.3.js?ver=4.9.3'></script>
     <script type='text/javascript'
-            src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.mousewheel.js?ver=4.9.3'></script>
+<!--            src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.mousewheel.js?ver=4.9.3'></script>-->
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.vaccordion.js?ver=4.9.3'></script>
     <script type='text/javascript'
@@ -251,6 +251,14 @@
     <link rel="icon"
           href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/uploads/2018/01/cropped-banki_kredity-3-1-32x32.jpg"
           sizes="32x32"/>
+    <style type="text/css" media="screen">
+        html { margin-top: 0 !important; }
+        * html body { margin-top: 0 !important; }
+        @media screen and ( max-width: 782px ) {
+            html { margin-top: 0 !important; }
+            * html body { margin-top: 0 !important; }
+        }
+    </style>
     <link rel="icon"
           href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/uploads/2018/01/cropped-banki_kredity-3-1-192x192.jpg"
           sizes="192x192"/>
