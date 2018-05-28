@@ -44,9 +44,84 @@ function change(cart) {
             console.log(max_credit_limit);
             kol += 1;
 
-            table = table + '<li class="results-container-line" data-reactid=".1.1.3.0.$15558=1out=1five0"><div class="result-card result-card--deposit result-card--promoted T-DefaultProposition T-Proposition" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0"><div class="result-card-top" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0"><div class="company-info-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0"><div class="company-logo" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.0"><a href="/bank/rossija/" class="company-logo-inner" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.0.0"><img src="//f.sravni.ru/logotypes/banks/logo_228.svg" alt="Банк Россия" title="Банк Россия" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.0.0.0"></a></div><div class="company-rating-reviews result-card__company-rating-reviews popup-container Tooltip-Container-Big" title="4.4" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1"><div class="rating-stars rating-stars--narrow" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1.0"><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1.0.0"></span><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1.0.1"> </span><div class="rating-stars-inner-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1.0.2"><span class="rating-stars-bar-svg is-stars-4-5" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1.0.2.0"></span></div><span class="rating-stars-text" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.0.1.0.3"></span></div></div></div><div class="product-info-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1"><div class="l-content-row" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0"><div class="result-card-name" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0"><div data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.0"><div class="license-text " data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.0.0"><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.0.0.0">Лиц. № </span><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.0.0.1">328</span></div><a href="/bank/rossija/vklad/vesennee-nastroenie/?currency=1&amp;amount=850000&amp;period=Год" class="result-name" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.0.1">Вклад «Весеннее настроение»</a></div><div class="provider-name" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.1"><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.0.0.1.0">Банк Россия</span></div></div></div><div class="l-content-row result-main-features clearfix" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1"><div class="result-card-item result-card-item--big" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.0"><span class="deposit-rate-value-container popup-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.0.0"><span class="deposit-rate-value test-rate-value" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.0.0.0">6,45%</span><div class="result-card-item-rate-sub" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.0.0.1">Ставка в год</div></span></div><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.1"> </span><div class="result-card-item result-card-item--small" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.2"><span class="deposit-time-value-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.2.0"><span class="deposit-profit-value" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.2.0.0">367 дней</span><div class="result-card-item-rate-sub" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.2.0.1">Срок вклада</div></span></div><span data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.3"> </span><div class="result-card-item" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.4"><span class="deposit-profit-value-container popup-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.4.0"><span class="deposit-profit-value bank-product-digit-value" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.4.0.0">+55 125<span class="rouble"><span class="rouble__default">руб.</span></span></span><div class="result-card-item-rate-sub" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.1.1.4.0.1">Ваш доход</div></span></div></div></div><div class="result-card-btn-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.2"><a class="ui-button ui-button--default result-card-order-btn" href="/bank/rossija/vklad/vesennee-nastroenie/?currency=1&amp;amount=850000&amp;period=Год" data-test="card" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.0.2.0">Подробнее</a></div>'+
-                '</div><div class="result-card-mobile-btn-container" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.1"><a class="ui-button ui-button--default result-card-order-btn" href="/bank/rossija/vklad/vesennee-nastroenie/?currency=1&amp;amount=850000&amp;period=Год" data-test="card" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.1.0">Подробнее</a></div><div class="result-card-close-btn" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.3"><icon class="icon icon-size-13 icon--close" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.3.0"><svg class="icon-img" viewBox="0 0 20 20" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.3.0.0"><line fill="none" stroke="#3B3E46" stroke-width="2" x1="1.3" y1="1.1" x2="18.9" y2="18.7" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.3.0.0.0"></line><line fill="none" stroke="#3B3E46" stroke-width="2" x1="18.6" y1="1.1" x2="1" y2="18.7" data-reactid=".1.1.3.0.$15558=1out=1five0.$15558=1default=1five0.3.0.0.1"></line></svg></icon></div>'+
-                '</div></li>';
+            table = table + '<li class="results-container-line">'+
+                '<div class="result-card result-card--deposit result-card--promoted T-DefaultProposition T-Proposition">'+
+                '<div class="result-card-top">'+
+                '<div class="company-info-container">'+
+                '<div class="company-logo">'+
+                '<a href="/bank/rossija/" class="company-logo-inner">'+
+                '<img src="//f.sravni.ru/logotypes/banks/logo_228.svg" alt="Банк Россия" title="Банк Россия">'+
+                '</a>'+
+                '</div>'+
+                '<div class="company-rating-reviews result-card__company-rating-reviews popup-container Tooltip-Container-Big" title="4.4">'+
+                '<div class="rating-stars rating-stars--narrow">'+
+                '<span></span>'+
+                '<span> </span>'+
+                '<div class="rating-stars-inner-container">'+
+                '<span class="rating-stars-bar-svg is-stars-4-5">'+
+                '</span>'+
+                '</div>'+
+                '<span class="rating-stars-text"></span>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '<div class="product-info-container">'+
+                '<div class="l-content-row">'+
+                '<div class="result-card-name">'+
+                '<div>'+
+                '<div class="license-text ">'+
+                '<span>Лиц. № </span>'+
+                '<span>328</span>'+
+                '</div>'+
+                '<a href="/bank/rossija/vklad/vesennee-nastroenie/?currency=1&amp;amount=850000&amp;period=Год" class="result-name">Вклад «Весеннее настроение»</a>'+
+                '</div>'+
+                '<div class="provider-name">'+
+                '<span>Банк Россия</span>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '<div class="l-content-row result-main-features clearfix">'+
+                '<div class="result-card-item result-card-item--big">'+
+                '<span class="deposit-rate-value-container popup-container">'+
+                '<span class="deposit-rate-value test-rate-value">6,45%</span>'+
+                '<div class="result-card-item-rate-sub">Ставка в год</div>'+
+                '</span>'+
+                '</div>'+
+                '<span> </span>'+
+                '<div class="result-card-item result-card-item--small">'+
+                '<span class="deposit-time-value-container">'+
+                '<span class="deposit-profit-value">367 дней</span>'+
+                '<div class="result-card-item-rate-sub">Срок вклада</div>'+
+                '</span>'+
+                '</div>'+
+                '<span> </span>'+
+                '<div class="result-card-item">'+
+                '<span class="deposit-profit-value-container popup-container">'+
+                '<span class="deposit-profit-value bank-product-digit-value">+55 125'+
+                '<span class="rouble"><span class="rouble__default">руб.</span>'+
+                '</span>'+
+                '</span'+
+                '><div class="result-card-item-rate-sub">Ваш доход</div>'+
+                '</span>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '<div class="result-card-btn-container">'+
+                '<a class="ui-button ui-button--default result-card-order-btn" href="/bank/rossija/vklad/vesennee-nastroenie/?currency=1&amp;amount=850000&amp;period=Год" data-test="card">Подробнее</a>'+
+                '</div>'+
+                '</div>'+
+                '<div class="result-card-mobile-btn-container">'+
+                '<a class="ui-button ui-button--default result-card-order-btn" href="/bank/rossija/vklad/vesennee-nastroenie/?currency=1&amp;amount=850000&amp;period=Год" data-test="card">Подробнее</a>'+
+                '</div><div class="result-card-close-btn">'+
+                '<icon class="icon icon-size-13 icon--close">'+
+                '<svg class="icon-img" viewBox="0 0 20 20">'+
+                '<line fill="none" stroke="#3B3E46" stroke-width="2" x1="1.3" y1="1.1" x2="18.9" y2="18.7"></line>'+
+                '<line fill="none" stroke="#3B3E46" stroke-width="2" x1="18.6" y1="1.1" x2="1" y2="18.7"></line>'+
+                '</svg>'+
+                '</icon>'+
+                '</div>'+
+                '</div>'+
+                '</li>';
 
         }
     }
