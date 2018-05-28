@@ -357,7 +357,7 @@
             </div>
         </div>
     </header>
-    <div class="content_page page-cr-cards">
+    <div class="content_page page-cr-cards page-deposits">
         <div data-reactid="151" style="margin-bottom:120px"><!-- react-empty: 152 -->
             <section class="_2rXEs aqIhJ calculator-list-theme__wrapper">
                 <div class="_20jzZ">
@@ -1582,7 +1582,7 @@
     }</script>
 <script>function Get_PotrKr() {
         $.ajax({
-            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_cr_cards.php",
+            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_deposits.php",
             type: "POST",
             error: function (response) {
                 $(".status").html(response.status + "<br>" + response.msg);
