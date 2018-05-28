@@ -33,6 +33,10 @@ if (count($result) > 0) {
         $PotrKr[$i]['amount_min'] = get_post_meta($p['ID'], 'amount_min', true);
         $PotrKr[$i]['amount_max'] = get_post_meta($p['ID'], 'amount_max', true);
         $PotrKr[$i]['type_card'] = get_post_meta($p['ID'], 'type_card', true);
+        $PotrKr[$i]['cashback'] = get_post_meta($p['ID'], 'cashback', true);
+        $PotrKr[$i]['min_credit_rate'] = get_post_meta($p['ID'], 'min_credit_rate', true);
+        $PotrKr[$i]['grace_period'] = get_post_meta($p['ID'], 'grace_period', true);
+        $PotrKr[$i]['max_credit_limit'] = get_post_meta($p['ID'], 'max_credit_limit', true);
 
 
 

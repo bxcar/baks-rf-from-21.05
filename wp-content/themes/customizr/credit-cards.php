@@ -431,7 +431,7 @@
                         </div>
                         <div class="_30VPM">
                             <div class="WXTuD _Szkx fx">
-                                <div class="_3SAiO _1wJD0 calculator-list-theme__label">Выберите сумму кредита</div>
+                                <div class="_3SAiO _1wJD0 calculator-list-theme__label">Кредитный лимит по карте</div>
                                 <div class="" data-test="ui-group">
                                     <div class="_2J6fq">
                                         <div class="_1Mbqb _2futP _2mpBR fx" data-test="ui-slider-input">
@@ -561,16 +561,16 @@
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                     </span>
                     </div>
-                    <div class="_1Xn7Q" data-cust-att="sort-parameter" data-reactid="281" data-type="pay">
-                    <span class="_2BeSz" data-reactid="282" data-cust-att="sort-parameter" data-type="pay"><!-- react-text: 283 -->Платеж&nbsp;
+                    <div class="_1Xn7Q" data-cust-att="sort-parameter" data-reactid="281" data-type="period">
+                    <span class="_2BeSz" data-reactid="282" data-cust-att="sort-parameter" data-type="period"><!-- react-text: 283 -->Льготный период&nbsp;
                         <!-- /react-text --><svg data-cust-att="sort-parameter" data-type="pay" width="16" height="16"
                                                  viewBox="0 0 1792 1792"
                                                  xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                     </span>
                     </div>
-                    <div class="_1Xn7Q h1KaH" data-cust-att="sort-parameter" data-reactid="286" data-type="overpay">
-                    <span class="_2BeSz" data-reactid="287" data-cust-att="sort-parameter" data-type="overpay"><!-- react-text: 288 -->Переплата&nbsp;
+                    <div class="_1Xn7Q h1KaH" data-cust-att="sort-parameter" data-reactid="286" data-type="limit">
+                    <span class="_2BeSz" data-reactid="287" data-cust-att="sort-parameter" data-type="limit"><!-- react-text: 288 -->Лимит&nbsp;
                         <!-- /react-text --><svg data-cust-att="sort-parameter" data-type="overpay" width="16"
                                                  height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
