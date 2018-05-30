@@ -10,7 +10,7 @@ function sort_credits(type) {
     var elemObj = jQuery("div#list_bank ul li._1EEzS");
 
     elemObj.sort(function(a,b){
-        if(jQuery(a).attr("data-"+ type) < jQuery(b).attr("data-"+ type)) {
+        if(Number(jQuery(a).attr("data-"+ type)) < Number(jQuery(b).attr("data-"+ type))) {
             return -1;
         } else {
             return 1;

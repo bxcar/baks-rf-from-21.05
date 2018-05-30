@@ -507,7 +507,7 @@
                                 </button>
                             </div>
                             <div class="WXTuD _1mLgv _129hA-fx1" data-reactid="223">
-                                <button href="#table-fx"
+                                <button href="#list_bank"
                                         class="_2sdWW calculator-list-theme__button-selection RaZ2S _3zDyU _3x77s"
                                         type="button" data-test="ui-button" data-reactid="224"><span class="zTFG-"
                                                                                                      data-reactid="225">Подобрать</span><span
@@ -1244,12 +1244,12 @@
         jQuery("._129hA-fx1").on("click", "button", function (event) {
             event.preventDefault();
             var id = jQuery(this).attr('href'),
-                top = jQuery(id).offset().top;
+                top = jQuery(id).offset().top - 80;
             jQuery('body,html').animate({scrollTop: top}, 500);
         });
     });
 </script>
-<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort-and-load-more-cr-cards.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort-and-load-more-deposits.js"></script>
 <script>$(function () {
         $("#slider-range").slider({
             range: true,

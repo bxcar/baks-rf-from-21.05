@@ -199,3 +199,11 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+    .page-deposits ._30VPM > .WXTuD:nth-child(2),
+    .page-deposits ._30VPM > .WXTuD:nth-child(4) {
+        width: calc((82% - 60px) / 3);
+    }
+}
+

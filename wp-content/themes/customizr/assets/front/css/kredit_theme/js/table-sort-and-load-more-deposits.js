@@ -16,9 +16,7 @@ function sort_credits(type) {
             return 1;
         }
     }).each(function () {
-        jQuery("div#list_bank > ul").append(this);
-        // console.log(jQuery(this).find("._2BVob")[0].innerHTML);
-        console.log('hello');
+        jQuery("div#list_bank > ul").prepend(this);
     });
     jQuery("div#list_bank li.results-container-line").css("display", "none").slice(0, 3).show();
 }
