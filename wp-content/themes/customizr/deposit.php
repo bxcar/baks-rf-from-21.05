@@ -370,68 +370,10 @@
                                         class="_1jaU-"><span
                                             class="calculator-list-theme__header-region-name"></span></span></div>
                         </div>
-                        <div class="calculator-controls-container l-row" data-reactid=".1.2.0.1.0.0">
-                            <div class="l-col" data-reactid=".1.2.0.1.0.0.0">
-                                <div class="radio-control" data-reactid=".1.2.0.1.0.0.0.0"><label
-                                            class="radio-control-label" data-reactid=".1.2.0.1.0.0.0.0.0">Выберите
-                                        карты</label><span class="radio-control-icon"
-                                                           data-reactid=".1.2.0.1.0.0.0.0.1"></span>
-                                    <div class="radio-control-inner" data-reactid=".1.2.0.1.0.0.0.0.2">
-                                        <ul data-reactid=".1.2.0.1.0.0.0.0.2.0">
-                                            <li data-reactid=".1.2.0.1.0.0.0.0.2.0.$0"><label
-                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$0.0"><input type="radio"
-                                                                                                        data-label="Все"
-                                                                                                        name="mainFilterValue"
-                                                                                                        value="card_type_all"
-                                                                                                        checked=""
-                                                                                                        onchange="Get_PotrKr();"
-                                                                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$0.0.0"><span
-                                                            data-reactid=".1.2.0.1.0.0.0.0.2.0.$0.0.1">Все</span></label>
-                                            </li>
-                                            <li data-reactid=".1.2.0.1.0.0.0.0.2.0.$1"><label
-                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$1.0"><input type="radio"
-                                                                                                        data-label="Cashback"
-                                                                                                        name="mainFilterValue"
-                                                                                                        value="card_type_cashback"
-                                                                                                        onchange="Get_PotrKr();"
-                                                                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$1.0.0"><span
-                                                            data-reactid=".1.2.0.1.0.0.0.0.2.0.$1.0.1">Cashback</span></label>
-                                            </li>
-                                            <li data-reactid=".1.2.0.1.0.0.0.0.2.0.$2"><label
-                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$2.0"><input type="radio"
-                                                                                                        data-label="Для путешествий"
-                                                                                                        name="mainFilterValue"
-                                                                                                        value="card_type_travel"
-                                                                                                        onchange="Get_PotrKr();"
-                                                                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$2.0.0"><span
-                                                            data-reactid=".1.2.0.1.0.0.0.0.2.0.$2.0.1">Для путешествий</span></label>
-                                            </li>
-                                            <li data-reactid=".1.2.0.1.0.0.0.0.2.0.$3"><label
-                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$3.0"><input type="radio"
-                                                                                                        data-label="Бонусы и скидки"
-                                                                                                        name="mainFilterValue"
-                                                                                                        value="card_type_bonus"
-                                                                                                        onchange="Get_PotrKr();"
-                                                                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$3.0.0"><span
-                                                            data-reactid=".1.2.0.1.0.0.0.0.2.0.$3.0.1">Бонусы и скидки</span></label>
-                                            </li>
-                                            <li data-reactid=".1.2.0.1.0.0.0.0.2.0.$4"><label
-                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$4.0"><input type="radio"
-                                                                                                        data-label="Без справок о доходах"
-                                                                                                        name="mainFilterValue"
-                                                                                                        value="card_type_without_income_statement"
-                                                                                                        onchange="Get_PotrKr();"
-                                                                                                        data-reactid=".1.2.0.1.0.0.0.0.2.0.$4.0.0"><span
-                                                            data-reactid=".1.2.0.1.0.0.0.0.2.0.$4.0.1">Без справок о доходах</span></label>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="_30VPM">
                             <div class="WXTuD _Szkx fx">
-                                <div class="_3SAiO _1wJD0 calculator-list-theme__label">Кредитный лимит по карте</div>
+                                <div class="_3SAiO _1wJD0 calculator-list-theme__label">Сумма вклада</div>
                                 <div class="" data-test="ui-group">
                                     <div class="_2J6fq">
                                         <div class="_1Mbqb _2futP _2mpBR fx" data-test="ui-slider-input">
@@ -448,16 +390,48 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="WXTuD WXTuD-fx">
+                                    <div class="_3SAiO _1wJD0 calculator-list-theme__label fx">Валюта</div>
+                                    <div data-test="ui-select" class="_129hA _129hA-fx">
+                                        <div class="_3_n91 _1e74P _1fswf" data-test="ui-select-input">
+                                            <div class="_1DCZo">
+                                                <div data-test="ui-select" class="_129hA _2futP _1iN3s">
+                                                    <div class="_3_n91 _1e74P _1fswf" data-test="ui-select-input">
+                                                        <div class="_1DCZo czr-focus"><input onchange="Get_PotrKr();" id="cur_currency" type="text" readonly="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="off" class="_2ARmF _2qJ6u _16cFN  czr-focusable" role="input" value="₽" onclick="select_cur();">
+                                                            <div class="_2k11- _2V6_I _3E_jV SVDVr _2Z7K9" data-test="ui-select-input-icon">
+                                                                <svg class="SdEDi" data-reactid="189">
+                                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-thin" data-reactid="190">
+                                                                        <svg viewBox="0 0 8.1 4.8" id="arrow-down-thin" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                                                                            <path d="M7.8.4L4.1 4.1.4.4"></path>
+                                                                        </svg>
+                                                                    </use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <ul id="currency" class=" _2cR3J" data-test="ui-select-values">
+                                                        <li value="RUB" class="_3NNjg" data-test="ui-menu-item" onclick="select_currency('₽')"><i class="fa fa-rub" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li value="USD" class="_3NNjg" data-test="ui-menu-item" onclick="select_currency('$')"><i class="fa fa-usd" aria-hidden="true"></i>
+                                                        </li>
+                                                        <li value="EUR" class="_3NNjg" data-test="ui-menu-item" onclick="select_currency('€')"><i class="fa fa-eur" aria-hidden="true"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="WXTuD" style="display: none;">
+                            <div class="WXTuD">
                                 <div class="_3SAiO _1wJD0 calculator-list-theme__label fx"> Срок</div>
                                 <div data-test="ui-select" class="_129hA _129hA-fx">
                                     <div class="_3_n91 _1e74P _1fswf" data-test="ui-select-input">
-                                        <div class="_1DCZo"><input id="cur_period" type="text" readonly=""
+                                        <div class="_1DCZo"><input onchange="Get_PotrKr()" id="cur_period" type="text" readonly=""
                                                                    autocomplete="off" autocorrect="off"
                                                                    autocapitalize="off"
                                                                    spellcheck="off" class="_2ARmF _2qJ6u _16cFN"
-                                                                   role="input" value="3 года"
+                                                                   role="input" value="1 год"
                                                                    onclick="select_period();">
                                             <div class="_2k11- _2V6_I _3E_jV SVDVr _2Z7K9"
                                                  data-test="ui-select-input-icon">
@@ -475,7 +449,7 @@
                                         </div>
                                     </div>
                                     <ul id="period" class="_3IKDE _2cR3J" data-test="ui-select-values">
-                                        <li value="P1M" label="1 месяц" class="_3NNjg" data-test="ui-menu-item"
+                                        <!--<li value="P1M" label="1 месяц" class="_3NNjg" data-test="ui-menu-item"
                                             data-reactid="205" onclick="select_period_srok('1 месяц')">1 месяц
                                         </li>
                                         <li value="P3M" label="3 месяца" class="_3NNjg " data-test="ui-menu-item"
@@ -486,7 +460,7 @@
                                         </li>
                                         <li value="P9M" label="9 месяцев" class="_3NNjg" data-test="ui-menu-item"
                                             onclick="select_period_srok('9 месяцев')">9 месяцев
-                                        </li>
+                                        </li>-->
                                         <li value="P1Y" label="1 год" class="_3NNjg" data-test="ui-menu-item"
                                             onclick="select_period_srok('1 год')">1 год
                                         </li>
@@ -526,13 +500,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="WXTuD _129hA-fx1" data-reactid="221"  style="display: none;">
+                            <div class="WXTuD _129hA-fx1" data-reactid="221" style="display: none;">
                                 <button onclick="show_dop()"
                                         class="_2sdWW calculator-list-theme__button-conditions _1VABv _3zDyU _3x77s"
                                         type="button" data-test="ui-button" data-reactid="222">+ Еще условия
                                 </button>
                             </div>
-                            <div class="WXTuD _1mLgv _129hA-fx1" data-reactid="223"  style="display: none;">
+                            <div class="WXTuD _1mLgv _129hA-fx1" data-reactid="223">
                                 <button href="#table-fx"
                                         class="_2sdWW calculator-list-theme__button-selection RaZ2S _3zDyU _3x77s"
                                         type="button" data-test="ui-button" data-reactid="224"><span class="zTFG-"
@@ -561,16 +535,16 @@
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                     </span>
                     </div>
-                    <div class="_1Xn7Q" data-cust-att="sort-parameter" data-reactid="281" data-type="period">
-                    <span class="_2BeSz" data-reactid="282" data-cust-att="sort-parameter" data-type="period"><!-- react-text: 283 -->Льготный период&nbsp;
+                    <div class="_1Xn7Q" data-cust-att="sort-parameter" data-reactid="281" data-type="rating">
+                    <span class="_2BeSz" data-reactid="282" data-cust-att="sort-parameter" data-type="rating"><!-- react-text: 283 -->Рейтинг
                         <!-- /react-text --><svg data-cust-att="sort-parameter" data-type="pay" width="16" height="16"
                                                  viewBox="0 0 1792 1792"
                                                  xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                     </span>
                     </div>
-                    <div class="_1Xn7Q h1KaH" data-cust-att="sort-parameter" data-reactid="286" data-type="limit">
-                    <span class="_2BeSz" data-reactid="287" data-cust-att="sort-parameter" data-type="limit"><!-- react-text: 288 -->Лимит&nbsp;
+                    <div class="_1Xn7Q h1KaH" data-cust-att="sort-parameter" data-reactid="286" data-type="income">
+                    <span class="_2BeSz" data-reactid="287" data-cust-att="sort-parameter" data-type="income"><!-- react-text: 288 -->Доход&nbsp;
                         <!-- /react-text --><svg data-cust-att="sort-parameter" data-type="overpay" width="16"
                                                  height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
@@ -682,76 +656,76 @@
                                                                                        onclick="select_period_dop();">
                                                                 <ul id="period_dop" class="_3IKDE _2cR3J"
                                                                     data-test="ui-select-values">
-                                                                    <li value="P1M" label="1 месяц" class="_3NNjg"
+                                                                   <!-- <li value="1m" label="1 месяц" class="_3NNjg"
                                                                         data-test="ui-menu-item" data-reactid="205"
                                                                         onclick="select_period_srok_dop('1 месяц')">1
                                                                         месяц
                                                                     </li>
-                                                                    <li value="P3M" label="3 месяца" class="_3NNjg "
+                                                                    <li value="3m" label="3 месяца" class="_3NNjg "
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('3 месяца')">3
                                                                         месяца
                                                                     </li>
-                                                                    <li value="P6M" label="6 мес¤цев" class="_3NNjg"
+                                                                    <li value="6m" label="6 мес¤цев" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('6 месяцев')">6
                                                                         месяцев
                                                                     </li>
-                                                                    <li value="P9M" label="9 месяцев" class="_3NNjg"
+                                                                    <li value="9m" label="9 месяцев" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('9 месяцев')">9
                                                                         месяцев
-                                                                    </li>
-                                                                    <li value="P1Y" label="1 год" class="_3NNjg"
+                                                                    </li>-->
+                                                                    <li value="1" label="1 год" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('1 год')">1 год
                                                                     </li>
-                                                                    <li value="P2Y" label="2 года" class="_3NNjg"
+                                                                    <li value="2" label="2 года" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('2 года')">2
                                                                         года
                                                                     </li>
-                                                                    <li value="P3Y" label="3 года" class="_3NNjg"
+                                                                    <li value="3" label="3 года" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('3 года')">3
                                                                         года
                                                                     </li>
-                                                                    <li value="P4Y" label="4 года" class="_3NNjg"
+                                                                    <li value="4" label="4 года" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('4 года')">4
                                                                         года
                                                                     </li>
-                                                                    <li value="P5Y" label="5 лет" class="_3NNjg"
+                                                                    <li value="5" label="5 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item" data-reactid="213"
                                                                         onclick="select_period_srok_dop('5 лет')">5 лет
                                                                     </li>
-                                                                    <li value="P6Y" label="6 лет" class="_3NNjg"
+                                                                    <li value="6" label="6 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item" data-reactid="214"
                                                                         onclick="select_period_srok_dop('6 лет')">6 лет
                                                                     </li>
-                                                                    <li value="P7Y" label="7 лет" class="_3NNjg"
+                                                                    <li value="7" label="7 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('7 лет')">7 лет
                                                                     </li>
-                                                                    <li value="P8Y" label="8 лет" class="_3NNjg"
+                                                                    <li value="8" label="8 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok('8 лет')">8 лет
                                                                     </li>
-                                                                    <li value="P9Y" label="9 лет" class="_3NNjg"
+                                                                    <li value="9" label="9 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('9 лет')">9 лет
                                                                     </li>
-                                                                    <li value="P10Y" label="10 лет" class="_3NNjg"
+                                                                    <li value="10" label="10 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('10 лет')">10
                                                                         лет
                                                                     </li>
-                                                                    <li value="P15Y" label="15 лет" class="_3NNjg"
+                                                                    <li value="15" label="15 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('15 лет')">15
                                                                         лет
                                                                     </li>
-                                                                    <li value="P20Y" label="20 лет" class="_3NNjg"
+                                                                    <li value="20" label="20 лет" class="_3NNjg"
                                                                         data-test="ui-menu-item"
                                                                         onclick="select_period_srok_dop('20 лет')">20
                                                                         лет
@@ -1609,7 +1583,7 @@
                 console.log(data);
                 change(data);
                 loadmore();
-                console.log("Успешно загрузили данные");
+//                console.log("Успешно загрузили данные");
             },
         });
     }

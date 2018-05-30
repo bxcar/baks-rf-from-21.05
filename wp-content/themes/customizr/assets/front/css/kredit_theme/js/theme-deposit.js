@@ -2,11 +2,23 @@
     return cart;
 }
 
+function declOfNum(number, titles) {
+    cases = [2, 0, 1, 1, 1, 2];
+    return number + ' ' + titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];
+}
+
 function change(cart) {
-    console.log("Показываем таблицу");
+    // console.log("Показываем таблицу");
 
     var sum_deposit = $("#price").val();
-    // var card_type_value = document.querySelector('input[name="mainFilterValue"]:checked').value;
+    var currency = $("#cur_currency_dop").val();
+    var deposit_period = $("#cur_period").val();
+    var deposit_period_number = deposit_period.replace(/[^0-9]/gim,'');
+    var cur_rate;
+    var cur_rate_number;
+    var cur_per;
+    // var cur_per_number;
+    var rating_class;
 
 
     var l = cart.bank_offers.length;
@@ -50,20 +62,59 @@ function change(cart) {
         if (true) {
             kol += 1;
 
+            if (currency == '₽') {
+                income = Math.round(rate_number * sum_deposit / 100) * deposit_period_number;
+                cur_rate = rate_str;
+                cur_rate_number = rate_number;
+
+                cur_per = period_number * deposit_period_number;
+                cur_per = declOfNum(cur_per, ['день', 'дня', 'дней']);
+            } else if (currency == '$') {
+                income = Math.round(rate_dollars_number * sum_deposit / 100) * deposit_period_number;
+                cur_rate = rate_dollars_str;
+                cur_rate_number = rate_dollars_number;
+
+                cur_per = period_dollars_number * deposit_period_number;
+                cur_per = declOfNum(cur_per, ['день', 'дня', 'дней']);
+            } else if (currency == '€') {
+                income = Math.round(rate_euro_number * sum_deposit / 100) * deposit_period_number;
+                cur_rate = rate_euro_str;
+                cur_rate_number = rate_euro_number;
+
+                cur_per = period_euro_number * deposit_period_number;
+                cur_per = declOfNum(cur_per, ['день', 'дня', 'дней']);
+            }
+
+            if (rating == 1) {
+                rating_class = 'is-stars-1';
+            } else if (rating == 1.5) {
+                rating_class = 'is-stars-1-5';
+            } else if (rating == 2) {
+                rating_class = 'is-stars-2';
+            } else if (rating == 2.5) {
+                rating_class = 'is-stars-2-5';
+            } else if (rating == 3) {
+                rating_class = 'is-stars-3';
+            } else if (rating == 3.5) {
+                rating_class = 'is-stars-3-5';
+            } else if (rating == 4) {
+                rating_class = 'is-stars-4';
+            } else if (rating == 4.5) {
+                rating_class = 'is-stars-4-5';
+            } else if (rating == 5) {
+                rating_class = 'is-stars-5';
+            }
+
             table = table + '<li class="results-container-line" ' +
-                'data-rate="' + rate_number + '" ' +
-                'data-rate-dollars="' + rate_dollars_number + '" ' +
-                'data-rate-euro="' + rate_euro_number + '" ' +
-                'data-period="' + period_number + '" ' +
-                'data-period-dollars="' + period_dollars_number + '" ' +
-                'data-period-euro="' + period_euro_number + '" ' +
+                'data-rate="' + cur_rate_number + '" ' +
+                'data-rating="' + rating + '" ' +
                 'data-income="' + income + '">' +
                 '<div class="result-card result-card--deposit result-card--promoted T-DefaultProposition T-Proposition">' +
                 '<div class="result-card-top">' +
                 '<div class="company-info-container">' +
                 '<div class="company-logo">' +
                 '<a href="' + link + '" class="company-logo-inner">' +
-                '<img src="' + logo + '" alt="Банк Россия" title="Банк Россия">' +
+                '<img src="' + logo + '">' +
                 '</a>' +
                 '</div>' +
                 '<div class="company-rating-reviews result-card__company-rating-reviews popup-container Tooltip-Container-Big" title="4.4">' +
@@ -71,7 +122,7 @@ function change(cart) {
                 '<span></span>' +
                 '<span> </span>' +
                 '<div class="rating-stars-inner-container">' +
-                '<span class="rating-stars-bar-svg is-stars-4-5">' +
+                '<span class="rating-stars-bar-svg ' + rating_class + '">' +
                 '</span>' +
                 '</div>' +
                 '<span class="rating-stars-text"></span>' +
@@ -89,22 +140,22 @@ function change(cart) {
                 '<div class="l-content-row result-main-features clearfix">' +
                 '<div class="result-card-item result-card-item--big">' +
                 '<span class="deposit-rate-value-container popup-container">' +
-                '<span class="deposit-rate-value test-rate-value">' + rate_str + '%</span>' +
+                '<span class="deposit-rate-value test-rate-value">' + cur_rate + '%</span>' +
                 '<div class="result-card-item-rate-sub">Ставка в год</div>' +
                 '</span>' +
                 '</div>' +
                 '<span> </span>' +
                 '<div class="result-card-item result-card-item--small">' +
                 '<span class="deposit-time-value-container">' +
-                '<span class="deposit-profit-value">' + period + '</span>' +
+                '<span class="deposit-profit-value">' + cur_per + '</span>' +
                 '<div class="result-card-item-rate-sub">Срок вклада</div>' +
                 '</span>' +
                 '</div>' +
                 '<span> </span>' +
                 '<div class="result-card-item">' +
                 '<span class="deposit-profit-value-container popup-container">' +
-                '<span class="deposit-profit-value bank-product-digit-value">+55 125' +
-                '<span class="rouble"><span class="rouble__default">руб.</span>' +
+                '<span class="deposit-profit-value bank-product-digit-value">+' + income +
+                '<span class="rouble1"><span class="rouble__default1">' + currency + '</span>' +
                 '</span>' +
                 '</span' +
                 '><div class="result-card-item-rate-sub">Ваш доход</div>' +

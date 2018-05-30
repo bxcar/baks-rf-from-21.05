@@ -183,6 +183,15 @@
     border-bottom-right-radius: 4px;
 }
 
+.page-deposits ._3I6R2 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.page-deposits ._3NNjg {
+    padding: 0 0 10px 13px;
+}
+
 .page-deposits .only-this-form .company-info-container {
     height: 100%;
     display: flex;
