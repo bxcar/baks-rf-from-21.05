@@ -30,7 +30,8 @@ if (count($result) > 0) {
         $PotrKr[$i]['period_dollars_number'] = get_post_meta($p['ID'], 'period_dollars_number', true);
         $PotrKr[$i]['period_euro'] = get_post_meta($p['ID'], 'period_euro', true);
         $PotrKr[$i]['period_euro_number'] = get_post_meta($p['ID'], 'period_euro_number', true);
-        $PotrKr[$i]['link'] = get_post_meta($p['ID'], 'link', true);
+//        $PotrKr[$i]['link'] = get_post_meta($p['ID'], 'link', true);
+        $PotrKr[$i]['link'] = get_permalink($p['ID']);
 
 
         $i = $i + 1;

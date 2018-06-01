@@ -165,8 +165,8 @@
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/ui/jquery.ui.touch-punch.js?ver=4.9.3'></script>
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.easing.1.3.js?ver=4.9.3'></script>
-    <script type='text/javascript'
-<!--            src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.mousewheel.js?ver=4.9.3'></script>-->
+    <!--<script type='text/javascript'
+                src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.mousewheel.js?ver=4.9.3'></script>-->
     <script type='text/javascript'
             src='https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/assets/front/css/kredit_theme/VerticalSlidingAccordion/js/jquery.vaccordion.js?ver=4.9.3'></script>
     <script type='text/javascript'
@@ -252,11 +252,22 @@
           href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/uploads/2018/01/cropped-banki_kredity-3-1-32x32.jpg"
           sizes="32x32"/>
     <style type="text/css" media="screen">
-        html { margin-top: 0 !important; }
-        * html body { margin-top: 0 !important; }
+        html {
+            margin-top: 0 !important;
+        }
+
+        * html body {
+            margin-top: 0 !important;
+        }
+
         @media screen and ( max-width: 782px ) {
-            html { margin-top: 0 !important; }
-            * html body { margin-top: 0 !important; }
+            html {
+                margin-top: 0 !important;
+            }
+
+            * html body {
+                margin-top: 0 !important;
+            }
         }
     </style>
     <link rel="icon"
@@ -403,11 +414,13 @@
                                     class="special-list__btn--icon"> </span></a></div>
                 </div>
                 <div class="special-list__item col-xs-12 col-sm-6 col-md-3">
-                    <div class="special-list__inner"><a aria-label="Кредиты по сниженным ставкам" href=""
-                                                        class="special-list__item pseudolink"><img alt=""
-                                                                                                   aria-hidden="true"
-                                                                                                   src="<? echo get_template_directory_uri() . '/assets/front/css/kredit_theme/' ?>img/kredity_online.svg"
-                                                                                                   class="special-list__icon"><span
+                    <div class="special-list__inner"><a aria-label="Кредиты по сниженным ставкам"
+                                                        href="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/credit-cards/"
+                                                        class="special-list__item pseudolink"><img
+                                    alt="https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/credit-cards/"
+                                    aria-hidden="true"
+                                    src="<? echo get_template_directory_uri() . '/assets/front/css/kredit_theme/' ?>img/kredity_online.svg"
+                                    class="special-list__icon"><span
                                     class="special-list__title">Кредитные карты</span> <span
                                     class="special-list__description">Сравнить и выбрать кредитные карты с подходящими условиями для вас</span><span
                                     class="special-list__description"> </span> <span
@@ -682,10 +695,12 @@
                                     <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
                                                                                            for="amount">Сумма
                                             кредита</label>
-                                        <div class="_3FIbJ"><input required type="text" placeholder="Сумма" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                        <div class="_3FIbJ"><input required type="text" placeholder="Сумма"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="amount"
-                                                                   name="amount" value=""></div>
+                                                                   name="amount" value="100000"></div>
                                     </div>
                                 </div>
                                 <div class="_3ITGU">
@@ -693,7 +708,8 @@
                                         <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
                                                     class="_1oupA _2IwHh" for="period">На какой срок</label>
                                             <div class="_3FIbJ ">
-                                                <input required autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                <input required autocomplete="off" autocorrect="off"
+                                                       autocapitalize="off"
                                                        spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
                                                        name="period" id="cur_period-kr-form"
                                                        onclick="select_period_kr_form();"
@@ -707,7 +723,8 @@
                                             </div>
                                         </div>
                                         <ul id="period-kr-form" class="_3nnad aDtzb" data-test="ui-select-values">
-                                            <li onclick="select_period_srok_kr_form('1 месяц')" value="P1M" label="1 месяц"
+                                            <li onclick="select_period_srok_kr_form('1 месяц')" value="P1M"
+                                                label="1 месяц"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">1
                                                 месяц
                                             </li>
@@ -727,15 +744,18 @@
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">1
                                                 год
                                             </li>
-                                            <li onclick="select_period_srok_kr_form('2 года')" value="P2Y" label="2 года"
+                                            <li onclick="select_period_srok_kr_form('2 года')" value="P2Y"
+                                                label="2 года"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">2
                                                 года
                                             </li>
-                                            <li onclick="select_period_srok_kr_form('3 года')" value="P3Y" label="3 года"
+                                            <li onclick="select_period_srok_kr_form('3 года')" value="P3Y"
+                                                label="3 года"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">3
                                                 года
                                             </li>
-                                            <li onclick="select_period_srok_kr_form('4 года')" value="P4Y" label="4 года"
+                                            <li onclick="select_period_srok_kr_form('4 года')" value="P4Y"
+                                                label="4 года"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">4
                                                 года
                                             </li>
@@ -759,15 +779,18 @@
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">9
                                                 лет
                                             </li>
-                                            <li onclick="select_period_srok_kr_form('10 лет')" value="P10Y" label="10 лет"
+                                            <li onclick="select_period_srok_kr_form('10 лет')" value="P10Y"
+                                                label="10 лет"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">10
                                                 лет
                                             </li>
-                                            <li onclick="select_period_srok_kr_form('15 лет')" value="P15Y" label="15 лет"
+                                            <li onclick="select_period_srok_kr_form('15 лет')" value="P15Y"
+                                                label="15 лет"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">15
                                                 лет
                                             </li>
-                                            <li onclick="select_period_srok_kr_form('20 лет')" value="P20Y" label="20 лет"
+                                            <li onclick="select_period_srok_kr_form('20 лет')" value="P20Y"
+                                                label="20 лет"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">20
                                                 лет
                                             </li>
@@ -779,15 +802,22 @@
                                         <div class="aJPK9">
                                             <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
                                                         class="_1oupA _2IwHh" for="region">Город получения</label>
-                                                <div class="_3FIbJ"><input required type="text" display="where" direction="down"
-                                                                           autocomplete="off" autocorrect="off"
-                                                                           autocapitalize="off" spellcheck="off"
-                                                                           class="_1QIZ8 _3pwdR" role="input" id="region"
-                                                                           name="region" value="Москва"></div>
+                                                <div class="_3FIbJ autocomplete-wrapper"><input required type="text"
+                                                                                                display="where"
+                                                                                                direction="down"
+                                                                                                autocomplete="off"
+                                                                                                autocorrect="off"
+                                                                                                autocapitalize="off"
+                                                                                                spellcheck="off"
+                                                                                                class="_1QIZ8 _3pwdR autocomplete"
+                                                                                                role="input" id="city"
+                                                                                                name="region"
+                                                                                                value="Москва"></div>
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-ajax-suggest-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -798,7 +828,8 @@
                                         <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
                                                     class="_1oupA _2IwHh" for="employmentType">Тип занятости</label>
                                             <div class="_3FIbJ ">
-                                                <input required onclick="select_employment_type_kr_form();" autocomplete="off"
+                                                <input required onclick="select_employment_type_kr_form();"
+                                                       autocomplete="off"
                                                        autocorrect="off" autocapitalize="off"
                                                        spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC" id="employmentType"
                                                        name="employmentType" placeholder="Выберите" value="">
@@ -820,7 +851,8 @@
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">Индивидуальный
                                                 предприниматель
                                             </li>
-                                            <li onclick="select_employment_type_ul_kr_form('Пенсионер');" value="Pensioner"
+                                            <li onclick="select_employment_type_ul_kr_form('Пенсионер');"
+                                                value="Pensioner"
                                                 label="Пенсионер" class="Z96DE _3pzz9"
                                                 data-test="ui-menu-item">Пенсионер
                                             </li>
@@ -838,221 +870,344 @@
                                 <div class="_3ITGU">
                                     <div class="_3bjVL _2IwHh">Начало работы на последнем месте</div>
                                     <div class="_2f7dD">
-                                        <div data-test="ui-select" class="_1F9QS _3gqYl custom-width">
+                                        <div data-test="ui-select" class="_1F9QS _3gqYl custom-width"
+                                             id="lastExperienceStartMonth-kr-form-wrap">
                                             <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input">
                                                 <div class="_3FIbJ ">
-                                                    <input required autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                    <input required autocomplete="off" autocorrect="off"
+                                                           autocapitalize="off"
                                                            spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
                                                            id="lastExperienceStartMonth" name="lastExperienceStartMonth"
-                                                           placeholder="Январь" value="">
-                                                    <!--<div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                           placeholder="Месяц" value=""
+                                                           onclick="select_lastExperienceStartMonth_kr_form()">
+                                                    <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
                                                          data-test="ui-select-input-icon">
                                                         <svg class="_4fAE4">
                                                             <use xlink:href="#arrow-down-thin"></use>
                                                         </svg>
-                                                    </div>-->
+                                                    </div>
                                                 </div>
                                             </div>
                                             <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                                <li value="01" label="Январь" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Январь')"
+                                                    value="01" label="Январь" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Январь
                                                 </li>
-                                                <li value="02" label="Февраль" class="Z96DE _3pzz9 _1kLbN"
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Февраль')"
+                                                    value="02" label="Февраль" class="Z96DE _3pzz9"
                                                     data-test="ui-menu-item">Февраль
                                                 </li>
-                                                <li value="03" label="Март" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Март')"
+                                                    value="03" label="Март" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Март
                                                 </li>
-                                                <li value="04" label="Апрель" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Апрель')"
+                                                    value="04" label="Апрель" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Апрель
                                                 </li>
-                                                <li value="05" label="Май" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Май')"
+                                                    value="05" label="Май" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Май
                                                 </li>
-                                                <li value="06" label="Июнь" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Июнь')"
+                                                    value="06" label="Июнь" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Июнь
                                                 </li>
-                                                <li value="07" label="Июль" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Июль')"
+                                                    value="07" label="Июль" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Июль
                                                 </li>
-                                                <li value="08" label="Август" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Август')"
+                                                    value="08" label="Август" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Август
                                                 </li>
-                                                <li value="09" label="Сентябрь" class="Z96DE _3pzz9"
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Сентябрь')"
+                                                    value="09" label="Сентябрь" class="Z96DE _3pzz9"
                                                     data-test="ui-menu-item">Сентябрь
                                                 </li>
-                                                <li value="10" label="Октябрь" class="Z96DE _3pzz9"
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Октябрь')"
+                                                    value="10" label="Октябрь" class="Z96DE _3pzz9"
                                                     data-test="ui-menu-item">Октябрь
                                                 </li>
-                                                <li value="11" label="Ноябрь" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Ноябрь')"
+                                                    value="11" label="Ноябрь" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     Ноябрь
                                                 </li>
-                                                <li value="12" label="Декабрь" class="Z96DE _3pzz9"
+                                                <li onclick="select_lastExperienceStartMonth_ul_kr_form('Декабрь')"
+                                                    value="12" label="Декабрь" class="Z96DE _3pzz9"
                                                     data-test="ui-menu-item">Декабрь
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div data-test="ui-select" class="_1F9QS _3gqYl">
+                                        <div data-test="ui-select" class="_1F9QS _3gqYl"
+                                             id="lastExperienceStartYear-kr-form-wrap">
                                             <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input">
                                                 <div class="_3FIbJ ">
-                                                    <input required autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                    <input required autocomplete="off" autocorrect="off"
+                                                           autocapitalize="off"
                                                            spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC"
                                                            id="lastExperienceStartYear" name="lastExperienceStartYear"
-                                                           placeholder="2018" value="">
-                                                    <!--<div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
+                                                           placeholder="Год" value=""
+                                                           onclick="select_lastExperienceStartYear_kr_form()">
+                                                    <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
                                                          data-test="ui-select-input-icon">
                                                         <svg class="_4fAE4">
                                                             <use xlink:href="#arrow-down-thin"></use>
                                                         </svg>
-                                                    </div>-->
+                                                    </div>
                                                 </div>
                                             </div>
                                             <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                                <li value="2018" label="2018" class="Z96DE _3pzz9 _1kLbN"
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2018')"
+                                                    value="2018" label="2018" class="Z96DE _3pzz9"
                                                     data-test="ui-menu-item">2018
                                                 </li>
-                                                <li value="2017" label="2017" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2017')"
+                                                    value="2017" label="2017" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2017
                                                 </li>
-                                                <li value="2016" label="2016" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2016')"
+                                                    value="2016" label="2016" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2016
                                                 </li>
-                                                <li value="2015" label="2015" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2015')"
+                                                    value="2015" label="2015" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2015
                                                 </li>
-                                                <li value="2014" label="2014" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2014')"
+                                                    value="2014" label="2014" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2014
                                                 </li>
-                                                <li value="2013" label="2013" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2013')"
+                                                    value="2013" label="2013" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2013
                                                 </li>
-                                                <li value="2012" label="2012" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2012')"
+                                                    value="2012" label="2012" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2012
                                                 </li>
-                                                <li value="2011" label="2011" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2011')"
+                                                    value="2011" label="2011" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2011
                                                 </li>
-                                                <li value="2010" label="2010" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2010')"
+                                                    value="2010" label="2010" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2010
                                                 </li>
-                                                <li value="2009" label="2009" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2009')"
+                                                    value="2009" label="2009" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2009
                                                 </li>
-                                                <li value="2008" label="2008" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2008')"
+                                                    value="2008" label="2008" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2008
                                                 </li>
-                                                <li value="2007" label="2007" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2007')"
+                                                    value="2007" label="2007" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2007
                                                 </li>
-                                                <li value="2006" label="2006" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2006')"
+                                                    value="2006" label="2006" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2006
                                                 </li>
-                                                <li value="2005" label="2005" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2005')"
+                                                    value="2005" label="2005" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2005
                                                 </li>
-                                                <li value="2004" label="2004" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2004')"
+                                                    value="2004" label="2004" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2004
                                                 </li>
-                                                <li value="2003" label="2003" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2003')"
+                                                    value="2003" label="2003" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2003
                                                 </li>
-                                                <li value="2002" label="2002" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2002')"
+                                                    value="2002" label="2002" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2002
                                                 </li>
-                                                <li value="2001" label="2001" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2001')"
+                                                    value="2001" label="2001" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2001
                                                 </li>
-                                                <li value="2000" label="2000" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('2000')"
+                                                    value="2000" label="2000" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     2000
                                                 </li>
-                                                <li value="1999" label="1999" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1999')"
+                                                    value="1999" label="1999" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1999
                                                 </li>
-                                                <li value="1998" label="1998" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1998')"
+                                                    value="1998" label="1998" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1998
                                                 </li>
-                                                <li value="1997" label="1997" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1997')"
+                                                    value="1997" label="1997" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1997
                                                 </li>
-                                                <li value="1996" label="1996" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1996')"
+                                                    value="1996" label="1996" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1996
                                                 </li>
-                                                <li value="1995" label="1995" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1995')"
+                                                    value="1995" label="1995" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1995
                                                 </li>
-                                                <li value="1994" label="1994" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1994')"
+                                                    value="1994" label="1994" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1994
                                                 </li>
-                                                <li value="1993" label="1993" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1993')"
+                                                    value="1993" label="1993" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1993
                                                 </li>
-                                                <li value="1992" label="1992" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1992')"
+                                                    value="1992" label="1992" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1992
                                                 </li>
-                                                <li value="1991" label="1991" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1991')"
+                                                    value="1991" label="1991" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1991
                                                 </li>
-                                                <li value="1990" label="1990" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1990')"
+                                                    value="1990" label="1990" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1990
                                                 </li>
-                                                <li value="1989" label="1989" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1989')"
+                                                    value="1989" label="1989" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1989
                                                 </li>
-                                                <li value="1988" label="1988" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1988')"
+                                                    value="1988" label="1988" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1988
                                                 </li>
-                                                <li value="1987" label="1987" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1987')"
+                                                    value="1987" label="1987" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1987
                                                 </li>
-                                                <li value="1986" label="1986" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1986')"
+                                                    value="1986" label="1986" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1986
                                                 </li>
-                                                <li value="1985" label="1985" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1985')"
+                                                    value="1985" label="1985" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1985
                                                 </li>
-                                                <li value="1984" label="1984" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1984')"
+                                                    value="1984" label="1984" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1984
                                                 </li>
-                                                <li value="1983" label="1983" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1983')"
+                                                    value="1983" label="1983" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1983
                                                 </li>
-                                                <li value="1982" label="1982" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1982')"
+                                                    value="1982" label="1982" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1982
                                                 </li>
-                                                <li value="1981" label="1981" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1981')"
+                                                    value="1981" label="1981" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1981
                                                 </li>
-                                                <li value="1980" label="1980" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1980')"
+                                                    value="1980" label="1980" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1980
                                                 </li>
-                                                <li value="1979" label="1979" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1979')"
+                                                    value="1979" label="1979" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1979
                                                 </li>
-                                                <li value="1978" label="1978" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1978')"
+                                                    value="1978" label="1978" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1978
                                                 </li>
-                                                <li value="1977" label="1977" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1977')"
+                                                    value="1977" label="1977" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1977
                                                 </li>
-                                                <li value="1976" label="1976" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1976')"
+                                                    value="1976" label="1976" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1976
                                                 </li>
-                                                <li value="1975" label="1975" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1975')"
+                                                    value="1975" label="1975" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1975
                                                 </li>
-                                                <li value="1974" label="1974" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1974')"
+                                                    value="1974" label="1974" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1974
                                                 </li>
-                                                <li value="1973" label="1973" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1973')"
+                                                    value="1973" label="1973" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1973
                                                 </li>
-                                                <li value="1972" label="1972" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1972')"
+                                                    value="1972" label="1972" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1972
                                                 </li>
-                                                <li value="1971" label="1971" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1971')"
+                                                    value="1971" label="1971" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1971
                                                 </li>
-                                                <li value="1970" label="1970" class="Z96DE _3pzz9" data-test="ui-menu-item">
+                                                <li onclick="select_lastExperienceStartYear_ul_kr_form('1970')"
+                                                    value="1970" label="1970" class="Z96DE _3pzz9"
+                                                    data-test="ui-menu-item">
                                                     1970
                                                 </li>
                                             </ul>
@@ -1063,18 +1218,22 @@
                                     <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
                                                                                            for="monthlySalary">Ежемесячный
                                             доход</label>
-                                        <div class="_3FIbJ"><input required type="text" placeholder="Сумма" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                        <div class="_3FIbJ"><input required type="text" placeholder="Сумма"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="monthlySalary"
-                                                                   name="monthlySalary" value=""></div>
+                                                                   name="monthlySalary" value="40000"></div>
                                     </div>
                                 </div>
                                 <div class="_3ITGU">
                                     <div data-test="ui-select" class="_1F9QS" id="creditSecurity-kr-form-wrap">
                                         <div class="_31J-9 _3yuTA _16jhA" data-test="ui-select-input"><label
-                                                    class="_1oupA _2IwHh" for="creditSecurity">Обеспечение кредита</label>
+                                                    class="_1oupA _2IwHh" for="creditSecurity">Обеспечение
+                                                кредита</label>
                                             <div class="_3FIbJ ">
-                                                <input required onclick="select_creditSecurity_kr_form()" autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                <input required onclick="select_creditSecurity_kr_form()"
+                                                       autocomplete="off" autocorrect="off" autocapitalize="off"
                                                        spellcheck="off" class="_1QIZ8 _3pwdR _1O6pC" id="creditSecurity"
                                                        name="creditSecurity" placeholder="Выберите">
                                                 <div class="_390m1 _1sid2 _18XP_ pEdyv _2fl7k"
@@ -1086,10 +1245,12 @@
                                             </div>
                                         </div>
                                         <ul class="_3nnad aDtzb" data-test="ui-select-values">
-                                            <li onclick="select_creditSecurity_ul_kr_form('Без обеспечения')" value="WithoutBail" label="Без обеспечения" class="Z96DE _3pzz9 _1kLbN"
+                                            <li onclick="select_creditSecurity_ul_kr_form('Без обеспечения')"
+                                                value="WithoutBail" label="Без обеспечения" class="Z96DE _3pzz9 _1kLbN"
                                                 data-test="ui-menu-item">Без обеспечения
                                             </li>
-                                            <li onclick="select_creditSecurity_ul_kr_form('Под залог недвижимости')" value="SecuredByAvailableRealEstate" label="Под залог недвижимости"
+                                            <li onclick="select_creditSecurity_ul_kr_form('Под залог недвижимости')"
+                                                value="SecuredByAvailableRealEstate" label="Под залог недвижимости"
                                                 class="Z96DE _3pzz9" data-test="ui-menu-item">Под залог недвижимости
                                             </li>
                                         </ul>
@@ -1103,16 +1264,19 @@
                                         <div class="aJPK9">
                                             <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
                                                         class="_1oupA _2IwHh" for="lastName">Фамилия</label>
-                                                <div class="_3FIbJ"><input required type="surname" data-focus-id="lastName"
+                                                <div class="_3FIbJ"><input required type="surname"
+                                                                           data-focus-id="lastName"
                                                                            display="where" direction="down"
                                                                            autocomplete="off" autocorrect="off"
                                                                            autocapitalize="off" spellcheck="off"
-                                                                           class="_1QIZ8 _3pwdR" role="input" id="lastName"
+                                                                           class="_1QIZ8 _3pwdR" role="input"
+                                                                           id="lastName"
                                                                            name="lastName" value=""></div>
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-ajax-suggest-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -1123,16 +1287,19 @@
                                         <div class="aJPK9">
                                             <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
                                                         class="_1oupA _2IwHh" for="firstName">Имя</label>
-                                                <div class="_3FIbJ"><input required type="name" data-focus-id="firstName"
+                                                <div class="_3FIbJ"><input required type="name"
+                                                                           data-focus-id="firstName"
                                                                            display="where" direction="down"
                                                                            autocomplete="off" autocorrect="off"
                                                                            autocapitalize="off" spellcheck="off"
-                                                                           class="_1QIZ8 _3pwdR" role="input" id="firstName"
+                                                                           class="_1QIZ8 _3pwdR" role="input"
+                                                                           id="firstName"
                                                                            name="firstName" value=""></div>
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-ajax-suggest-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -1143,16 +1310,19 @@
                                         <div class="aJPK9">
                                             <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
                                                         class="_1oupA _2IwHh" for="surname">Отчество</label>
-                                                <div class="_3FIbJ"><input required type="patronymic" data-focus-id="surname"
+                                                <div class="_3FIbJ"><input required type="patronymic"
+                                                                           data-focus-id="surname"
                                                                            display="where" direction="down"
                                                                            autocomplete="off" autocorrect="off"
                                                                            autocapitalize="off" spellcheck="off"
-                                                                           class="_1QIZ8 _3pwdR" role="input" id="surname"
+                                                                           class="_1QIZ8 _3pwdR" role="input"
+                                                                           id="surname"
                                                                            name="surname" value=""></div>
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-ajax-suggest-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -1162,8 +1332,10 @@
                                     <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
                                                                                            for="phone">Телефон для
                                             связи</label>
-                                        <div class="_3FIbJ"><input required type="tel" data-focus-id="phone" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                        <div class="_3FIbJ"><input required type="tel" data-focus-id="phone"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="phone"
                                                                    name="phone" value=""></div>
                                     </div>
@@ -1182,7 +1354,8 @@
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-autocomplete-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-autocomplete-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -1191,7 +1364,8 @@
                                 <div class="_3ITGU _2ZoAD _2ZoAD-rules">
                                     <div>
                                         <div class="_2s9kS _2Ygnf F2Di1" data-test="ui-checkbox-group">
-                                            <div class="VKYxY"><label class="_3Dnlt WpiwV" data-test="ui-checkbox"><input
+                                            <div class="VKYxY"><label class="_3Dnlt WpiwV"
+                                                                      data-test="ui-checkbox"><input
                                                             type="checkbox" class="_9wZ_m" name="agreement" value="true"
                                                             readonly=""><span class="_2xGBH"><span><!-- react-text: 776 -->Согласен с
                                                             <!-- /react-text --><a class="link">правилами предоставления информации</a></span></span></label>
@@ -1199,9 +1373,19 @@
                                         </div><!-- react-empty: 778 --></div>
                                 </div>
                             </div>
+                            <div class="_3ITGU _2ZoAD _2ZoAD-checkbox">
+                                <div>
+                                    <div class="_2s9kS _2Ygnf F2Di1" data-test="ui-checkbox-group">
+                                        <div class="VKYxY"><label id="tos-check-label" class="_3Dnlt WpiwV" data-test="ui-checkbox"><input
+                                                        checked onclick="tos_check()" id="tos-check" type="checkbox" class="_9wZ_m" name="agreement" value="true"><span class="_2xGBH"><span><!-- react-text: 3941 -->Согласен с
+                                                        <!-- /react-text --><a class="link tos">правилами предоставления информации</a></span></span></label>
+                                        </div>
+                                    </div><!-- react-empty: 4007 --></div>
+                            </div>
                             <div class="_3yk02">
                                 <div class="Gbeui _8SYy5">
-                                    <button class="_3yCMa _20Wee N0qHF _1-c8L form-first-part-button" type="button" data-test="ui-button">
+                                    <button class="_3yCMa _20Wee N0qHF _1-c8L form-first-part-button" type="button"
+                                            data-test="ui-button">
                                         Продолжить
                                     </button>
                                 </div>
@@ -1209,27 +1393,33 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
+                    <script>
+                        function tos_check(){
+                            if(document.getElementById('tos-check').checked) {
+                                jQuery("#tos-check-label").addClass('WpiwV');
+                            } else {
+                                jQuery("#tos-check-label").removeClass('WpiwV');
+                                console.log('remove');
+                            }
+                        }
+                    </script>
 
 
                     <div class="_1LQWv ER4_X form-second-part">
                         <div class="_1miZw _1rUOp">
                             <div class="zWp9- _2mg0e">Паспортные данные</div>
-                            <div class="_2RJvL"><p>Ваши паспортные данные будут переданы в банк по защищённому каналу.</p>
+                            <div class="_2RJvL"><p>Ваши паспортные данные будут переданы в банк по защищённому
+                                    каналу.</p>
                                 <p>Это необходимо для принятия решения о выдаче кредита.</p></div>
                             <div class="_1CBZx _3nekq">
                                 <div class="_3ITGU">
                                     <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
                                                                                            for="birthDate">Дата
                                             рождения</label>
-                                        <div class="_3FIbJ"><input required type="text" data-focus-id="birthDate" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="birthDate"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="birthDate"
                                                                    name="birthDate" value=""></div>
                                     </div>
@@ -1239,26 +1429,32 @@
                                         <div class="aJPK9">
                                             <div class="_31J-9 _16jhA" data-test="ui-ajax-suggest-input"><label
                                                         class="_1oupA _2IwHh" for="birthPlace">Место рождения</label>
-                                                <div class="_3FIbJ"><input required type="text" data-focus-id="birthPlace"
+                                                <div class="_3FIbJ"><input required type="text"
+                                                                           data-focus-id="birthPlace"
                                                                            display="where" direction="down"
                                                                            autocomplete="off" autocorrect="off"
                                                                            autocapitalize="off" spellcheck="off"
                                                                            class="_1QIZ8 _3pwdR" role="input"
-                                                                           id="birthPlace" name="birthPlace" value=""></div>
+                                                                           id="birthPlace" name="birthPlace" value="">
+                                                </div>
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-ajax-suggest-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="_3ITGU">
-                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh" for="sn">Номер
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="sn">Номер
                                             паспорта</label>
-                                        <div class="_3FIbJ"><input required type="text" data-focus-id="sn" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="sn"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="sn" name="sn"
                                                                    value=""></div>
                                     </div>
@@ -1267,26 +1463,35 @@
                                     <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
                                                                                            for="issueDate">Дата
                                             выдачи</label>
-                                        <div class="_3FIbJ"><input required type="text" data-focus-id="issueDate" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="issueDate"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="issueDate"
                                                                    name="issueDate" value=""></div>
                                     </div>
                                 </div>
                                 <div class="_3ITGU">
-                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh" for="code">Код
+                                    <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
+                                                                                           for="code">Код
                                             подразделения</label>
-                                        <div class="_3FIbJ"><input required type="text" data-focus-id="code" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
-                                                                   class="_1QIZ8 _3pwdR" role="input" id="code" name="code"
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="code"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
+                                                                   class="_1QIZ8 _3pwdR" role="input" id="code"
+                                                                   name="code"
                                                                    value=""></div>
                                     </div>
                                 </div>
                                 <div class="_3ITGU _2ZoAD">
                                     <div class="_31J-9 _16jhA" data-test="ui-input"><label class="_1oupA _2IwHh"
-                                                                                           for="issuer">Кем выдан</label>
-                                        <div class="_3FIbJ"><input required type="text" data-focus-id="issuer" autocomplete="off"
-                                                                   autocorrect="off" autocapitalize="off" spellcheck="off"
+                                                                                           for="issuer">Кем
+                                            выдан</label>
+                                        <div class="_3FIbJ"><input required type="text" data-focus-id="issuer"
+                                                                   autocomplete="off"
+                                                                   autocorrect="off" autocapitalize="off"
+                                                                   spellcheck="off"
                                                                    class="_1QIZ8 _3pwdR" role="input" id="issuer"
                                                                    name="issuer"></div>
                                     </div>
@@ -1301,12 +1506,14 @@
                                                                            display="where" direction="down"
                                                                            autocomplete="off" autocorrect="off"
                                                                            autocapitalize="off" spellcheck="off"
-                                                                           class="_1QIZ8 _3pwdR" role="input" id="address"
+                                                                           class="_1QIZ8 _3pwdR" role="input"
+                                                                           id="address"
                                                                            name="address" value=""></div>
                                             </div>
                                             <div class="UfXw4">
                                                 <div class="">
-                                                    <ul class="_3nnad _2Hwhb" data-test="ui-ajax-suggest-suggestions"></ul>
+                                                    <ul class="_3nnad _2Hwhb"
+                                                        data-test="ui-ajax-suggest-suggestions"></ul>
                                                 </div>
                                             </div>
                                         </div>
@@ -1315,8 +1522,11 @@
                             </div>
                             <div class="_3yk02">
                                 <div class="Gbeui _8SYy5">
-                                    <input type="hidden" value="<?= get_bloginfo('admin_email'); ?>" name="sendto" required>
-                                    <input style="text-transform: none;" id="submit-static-form" class="_3yCMa _20Wee N0qHF _1-c8L" type="submit" data-test="ui-button" value="Отправить">
+                                    <input type="hidden" value="<?= get_bloginfo('admin_email'); ?>" name="sendto"
+                                           required>
+                                    <input style="text-transform: none;" id="submit-static-form"
+                                           class="_3yCMa _20Wee N0qHF _1-c8L" type="submit" data-test="ui-button"
+                                           value="Отправить">
                                 </div>
                             </div>
                         </div>
@@ -1607,6 +1817,11 @@
 </div>
 </div>
 <?php get_footer(); ?>
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/front/css/jquery-ui-for-autocomp-wrap.css">
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/front/js/city-list.js"></script>
 <div class="_2Jclz _2fZko _1odi0 _3m0xh" id="overlay" style="display:none;">
     <div class="ud9DQ _21AWC _2t8V0"></div>
     <div class="_2TVkK  _3BjeW _3dfdz _2Muap">
@@ -2472,6 +2687,16 @@
     }
 </script>
 <script>
+    function select_lastExperienceStartMonth_kr_form() {
+        $("#lastExperienceStartMonth-kr-form-wrap").toggleClass("_1VyK0");
+    }
+</script>
+<script>
+    function select_lastExperienceStartYear_kr_form() {
+        $("#lastExperienceStartYear-kr-form-wrap").toggleClass("_1VyK0");
+    }
+</script>
+<script>
     function select_creditSecurity_kr_form() {
         $("#creditSecurity-kr-form-wrap").toggleClass("_1VyK0");
     }
@@ -2590,6 +2815,18 @@
     function select_creditSecurity_ul_kr_form(a) {
         $("#creditSecurity").val(a);
         $("#creditSecurity-kr-form-wrap").toggleClass("_1VyK0");
+    }
+</script>
+<script>
+    function select_lastExperienceStartMonth_ul_kr_form(a) {
+        $("#lastExperienceStartMonth").val(a);
+        $("#lastExperienceStartMonth-kr-form-wrap").toggleClass("_1VyK0");
+    }
+</script>
+<script>
+    function select_lastExperienceStartYear_ul_kr_form(a) {
+        $("#lastExperienceStartYear").val(a);
+        $("#lastExperienceStartYear-kr-form-wrap").toggleClass("_1VyK0");
     }
 </script>
 <script>function select_period_srok_dop(a) {
@@ -2768,4 +3005,17 @@
     <div><img src="https://mc.yandex.ru/watch/47665804?ut=noindex" style="position:absolute; left:-9999px;" alt=""/>
     </div>
 </noscript>
+<script src="<?= get_template_directory_uri();?>/assets/front/js/jquery.maskedinput.min.js"></script>
+<script>
+    //Код jQuery, установливающий маску для ввода телефона элементу input
+    //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+    $(function(){
+        //2. Получить элемент, к которому необходимо добавить маску
+        $("#phone").mask("+7(999) 999-99-99");
+        $("#birthDate").mask("99.99.9999");
+        $("#sn").mask("** ** ******");
+        $("#issueDate").mask("99.99.9999");
+        $("#code").mask("***-***");
+    });
+</script>
 <!-- /Yandex.Metrika counter -->

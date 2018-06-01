@@ -207,3 +207,43 @@
     }
 }
 
+.ui-menu-item:hover {
+    background-color: #e8f4fe;
+}
+
+.ui-menu-item {
+    font-size: 16px;
+    padding: 15px;
+    color: #3c3e44;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: none;
+    background-color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.25);
+}
+
+.ui-menu.ui-widget.ui-widget-content.ui-autocomplete {
+    max-height: 250px;
+    visibility: visible;
+    position: absolute;
+    background-color: #fff;
+    transition: max-height .35s cubic-bezier(.4,0,.2,1),box-shadow .35s cubic-bezier(.4,0,.2,1);
+    z-index: 100;
+}
+
+.only-this-form ._3ITGU._2ZoAD-checkbox {
+    padding-left: 0;
+}
+
+.only-this-form ._3ITGU._2ZoAD-checkbox .link {
+    color: #00a5e0;
+}
+
+.only-this-form ._3ITGU._2ZoAD-checkbox .link:hover {
+    color: #069ed4;
+}
+
+.pum-content.popmake-content ul li {
+    background-position: 0 40%;
+}
